@@ -1,0 +1,81 @@
+#landing-first-section {
+  background-image: url(../../assets/images/1st-landing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 80px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+#landing-first-section h2 {
+  font-size: 70px;
+  font-weight: 200;
+  font-family: "Italian1";
+  letter-spacing: 10px;
+  line-height: 70px;
+  margin-bottom: 12px;
+  color: #dfdfdf;
+  text-shadow: 17px 13px 4px #141414;
+}
+
+#landing-first-section h2 .highlighted {
+  color: #b832e0;
+  font-weight: 400;
+  font-family: "Italian1";
+  font-size: 75px;
+  padding: 0px 28px;
+  border-radius: 35px;
+  display: inline-block;
+  box-shadow: 0 0 25px -8px;
+}
+
+#landing-first-section .definition-logo {
+  height: 40px;
+  width: auto;
+}
+
+#landing-first-section .definition-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#landing-first-section .pronunc {
+  color: #bfbfbf;
+  letter-spacing: 4px;
+}
+
+#landing-first-section .emoji {
+  font-size: 18px;
+}
+
+#landing-first-section .word {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+#landing-first-section .definition {
+  letter-spacing: 1px;
+}
+
+#landing-first-section ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 8px;
+  max-width: 500px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+#landing-first-section .buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

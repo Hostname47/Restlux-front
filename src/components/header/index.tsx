@@ -61,6 +61,7 @@ function Header() {
         <button className="button-style-1">
           <SearchIcon className="icon" />
         </button>
+        <div className="separator-style-1"></div>
         <button className="button-style-1">
           <LanguageIcon className="icon" />
         </button>

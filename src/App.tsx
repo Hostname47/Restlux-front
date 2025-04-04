@@ -2,7 +2,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { store } from "./app/store";
 import Header from "./components/header";
-import LandingPage from "./pages/index";
+import LandingPage from "./pages/landing-page/index";
 
 function App() {
   return (

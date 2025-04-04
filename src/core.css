@@ -6,6 +6,20 @@
 }
 
 @font-face {
+  font-family: "Italian1";
+  src: url("./assets/fonts/italian/italian.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playwrite";
+  src: url("./assets/fonts/play-write/Playwrite.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Karla";
   src: url("./assets/fonts/karla/Karla-ExtraLight.ttf") format("truetype");
   font-weight: 200;
@@ -156,6 +170,49 @@ button {
 .button-style-1 .icon {
   width: 18px;
   height: 18px;
+}
+
+.button-style-2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #e4e4e4;
+  padding: 14px 19px;
+  width: max-content;
+  color: #353535;
+  fill: #353535;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.button-style-2:hover {
+  background-color: white;
+  color: black;
+  fill: black;
+}
+
+.button-style-2 .icon {
+  width: 18px;
+  height: 18px;
+}
+
+.button-style-3 {
+  display: flex;
+  align-items: center;
+  padding: 14px 19px;
+  width: max-content;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  color: #c2c2c2;
+}
+
+.button-style-3:hover {
+  color: white;
 }
 
 .right {
