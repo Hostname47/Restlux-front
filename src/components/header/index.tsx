@@ -9,19 +9,19 @@ function Header() {
       </a>
       <ul>
         <li>
-          <a href="">LINK1</a>
+          <a href="">HOME</a>
         </li>
         <li>
-          <a href="">LINK1</a>
+          <a href="">FOODS</a>
         </li>
         <li>
-          <a href="">LINK1</a>
+          <a href="">RESERVATIONS</a>
         </li>
         <li>
-          <a href="">LINK1</a>
+          <a href="">SUBSCRIPTIONS</a>
         </li>
         <li>
-          <a href="">LINK1</a>
+          <a href="">CONTACT</a>
         </li>
       </ul>
     </header>
