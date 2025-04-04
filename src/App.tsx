@@ -1,14 +1,17 @@
 import { Provider } from "react-redux";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { store } from "./app/store";
 import Header from "./components/header";
+import LandingPage from "./pages/index";
 
 function App() {
   return (
     <Provider store={store}>
-      <Header />
       <BrowserRouter>
-        <Routes>{/* <Route path="/" element={<Terminal />} /> */}</Routes>
+        <Header />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+        </Routes>
       </BrowserRouter>
     </Provider>
   );
