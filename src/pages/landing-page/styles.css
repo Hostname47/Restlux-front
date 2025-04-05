@@ -111,7 +111,7 @@
   gap: 4px;
 }
 
-#landing-page-about-section > div h2 span {
+h2 span {
   font-family: "Italian1";
   font-weight: 400;
   font-size: 35px;
@@ -144,4 +144,70 @@
 
 #landing-page-about-section .gallery .image {
   height: 100%;
+}
+
+#landing-page-stats-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 1px solid #2b2b2b;
+}
+
+#landing-page-stats-section > div {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  max-width: 900px;
+}
+
+#landing-page-stats-section .illustration {
+  height: 180px;
+}
+
+#landing-page-stats-section .content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#landing-page-stats-section .content-container span:first-of-type {
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+#landing-page-stats-section .content-container h2 {
+  letter-spacing: 3px;
+}
+
+#landing-page-stats-section .stats-container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+#landing-page-stats-section .stats-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 12px;
+}
+
+#landing-page-stats-section .stats-container .stat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#landing-page-stats-section .stats-container .label {
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+#landing-page-stats-section .stats-container .value {
+  font-size: 60px;
+  font-family: "Italian1";
+  letter-spacing: 6px;
+  line-height: 60px;
 }
