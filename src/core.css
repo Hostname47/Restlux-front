@@ -164,8 +164,8 @@ button {
 }
 
 .button-style-1:hover {
-  color: #0781ff;
-  fill: #0781ff;
+  color: #cdad83;
+  fill: #cdad83;
 }
 
 .button-style-1 .icon {
@@ -230,10 +230,12 @@ button {
   border-radius: 2px;
   transition: all 0.4s ease;
   border: 1px solid white;
+  color: #f4ce9b;
+  border-color: #cdad83;
 }
 
 .button-style-4:hover {
-  background-color: black;
+  background-color: #2f2a20a1;
 }
 
 .button-style-5 {
@@ -247,12 +249,12 @@ button {
   padding: 9px 13px;
   font-size: 14px;
   border-radius: 3px;
-  background-color: #f178f3;
-  transition: background-color 0.3s ease;
+  background-color: rgb(34, 34, 34);
+  transition: background-color 0.1s ease;
 }
 
 .button-style-5:hover {
-  background-color: #e66be8;
+  background-color: black;
 }
 
 .button-style-5 .icon {
@@ -281,6 +283,10 @@ button {
   color: rgb(255, 42, 42);
 }
 
+.black {
+  color: black !important;
+}
+
 .relative {
   position: relative;
 }
@@ -290,6 +296,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.italian-font {
+  font-family: "Italian1";
 }
 
 @keyframes spin {

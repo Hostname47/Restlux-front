@@ -7,8 +7,8 @@ function AboutSection() {
   return (
     <div id="landing-page-about-section">
       <div>
-        <b className="above-title">Our Story</b>
-        <h2 className="title">
+        <b className="section-above-title">Our story</b>
+        <h2 className="section-title">
           ABOUT <span>Restlux"</span>
         </h2>
         <div className="gallery">

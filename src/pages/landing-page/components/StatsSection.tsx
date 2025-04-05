@@ -8,7 +8,7 @@ function StatsSection() {
         <div className="content-container">
           <span>What the Numbers Say</span>
           <h2>
-            Our Stats, Your<span className="highlighted">Confidence</span>
+            Our Stats, Your<span className="highlighted">Confidence"</span>
           </h2>
           <div className="stats-container">
             <div className="stat-container">

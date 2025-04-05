@@ -37,9 +37,9 @@ function NewsletterSection() {
       <div>
         <img src={Messanger} className="illustration" />
         <div className="content-container">
-          <span className="above-title">Keep in touch</span>
-          <h2 className="title">
-            Join our <span className="highlighted">Newsletter</span>
+          <span className="section-above-title black">Keep in touch</span>
+          <h2 className="section-title">
+            JOIN OUR<span className="highlighted">Newsletter"</span>
           </h2>
           <p className="content">
             Subscribe to our newsletter and be the first to hear about new
