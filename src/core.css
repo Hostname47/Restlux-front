@@ -261,6 +261,11 @@ button {
   fill: white;
 }
 
+.button-style-5:disabled {
+  background-color: #e3a7e4 !important;
+  cursor: default;
+}
+
 .right {
   margin-left: auto;
 }
@@ -274,4 +279,35 @@ button {
 
 .red {
   color: rgb(255, 42, 42);
+}
+
+.relative {
+  position: relative;
+}
+
+.icon-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: none;
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }

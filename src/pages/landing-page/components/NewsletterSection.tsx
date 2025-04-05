@@ -2,6 +2,7 @@ import { useState } from "react";
 import Messanger from "../../../assets/images/svgs/flat/messanger.svg";
 import MessageIcon from "../../../components/icons/MessageIcon";
 import FormMessage from "../../../components/form-message";
+import LoadingSpinner from "../../../components/loading-spinner";
 
 function NewsletterSection() {
   const [submitting, setSubmitting] = useState(false);
@@ -71,7 +72,10 @@ function NewsletterSection() {
               disabled={submitting}
               onClick={send}
             >
-              <MessageIcon className="icon" />
+              <div className="icon-box">
+                <MessageIcon className="icon" opacity={submitting ? 0 : 1} />
+                <LoadingSpinner shown={submitting} absolute />
+              </div>
               SUBSCRIBE
             </button>
           </form>
