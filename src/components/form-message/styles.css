@@ -1,0 +1,58 @@
+.form-message {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #f5f7fa;
+  border: 1px solid #c3c7cf;
+  border-radius: 2px;
+  padding: 8px 10px;
+  gap: 6px;
+  box-sizing: border-box;
+}
+.form-message.green {
+  background-color: #f3fff5;
+  border: 1px solid #84b292;
+}
+.form-message.red {
+  background-color: #fff7f7;
+  border: 1px solid #e16060;
+}
+
+.form-message-content {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2a2d2e;
+  margin-top: 2px;
+}
+.form-message-content.green {
+  color: #2c792c;
+}
+.form-message-content.red {
+  color: #ca2323;
+}
+
+.form-message-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+}
+
+.form-message-close-button:hover {
+  background-color: #2a2d2e15;
+}
+
+.form-message-close-button {
+  display: flex;
+  padding: 2px 3px;
+  background-color: transparent;
+  border: unset;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.form-message-close-icon {
+  width: 18px;
+  height: 18px;
+  fill: #2a2d2e;
+}

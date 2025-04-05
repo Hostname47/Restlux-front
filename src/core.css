@@ -160,6 +160,7 @@ button {
   background-color: white;
   color: black;
   fill: black;
+  border: 1px solid black;
 }
 
 .button-style-1:hover {
@@ -235,6 +236,31 @@ button {
   background-color: black;
 }
 
+.button-style-5 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  width: max-content;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 9px 13px;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: #f178f3;
+  transition: background-color 0.3s ease;
+}
+
+.button-style-5:hover {
+  background-color: #e66be8;
+}
+
+.button-style-5 .icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
 .right {
   margin-left: auto;
 }
@@ -244,4 +270,8 @@ button {
   height: 8px;
   background-color: gray;
   margin: 0 10px;
+}
+
+.red {
+  color: rgb(255, 42, 42);
 }

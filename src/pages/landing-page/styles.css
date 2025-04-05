@@ -132,7 +132,7 @@ h2 span {
 }
 
 #landing-page-about-section .gallery .image-container {
-  height: 330px;
+  height: 380px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0px 0 11px -7px #640083;
@@ -210,4 +210,70 @@ h2 span {
   font-family: "Italian1";
   letter-spacing: 6px;
   line-height: 60px;
+}
+
+#landing-page-offers-section {
+}
+
+#landing-page-newsletter-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: white;
+}
+
+#landing-page-newsletter-section > div {
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+}
+
+#landing-page-newsletter-section .title,
+#landing-page-newsletter-section .above-title,
+#landing-page-newsletter-section .content,
+#landing-page-newsletter-section label,
+#landing-page-newsletter-section .input {
+  color: black;
+}
+
+#landing-page-newsletter-section .above-title {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+#landing-page-newsletter-section .title {
+  letter-spacing: 2px;
+}
+
+#landing-page-newsletter-section .illustration {
+  height: 280px;
+}
+
+#landing-page-newsletter-section .content {
+  line-height: 30px;
+  letter-spacing: 0.8px;
+}
+
+#landing-page-newsletter-section .subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#landing-page-newsletter-section label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+#landing-page-newsletter-section .email-input {
+  padding: 10px 16px;
+  border: 1px solid rgb(179, 180, 184);
+  border-radius: 3px;
+  outline: none;
+  letter-spacing: 1px;
+  color: black;
+  width: 320px;
+  margin-bottom: 4px;
 }
