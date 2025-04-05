@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import CalendarIcon from "../../../components/icons/CalendarIcon";
 
 function LandingFirstSection() {
@@ -27,11 +28,13 @@ function LandingFirstSection() {
         </li>
       </ul>
       <div className="buttons">
-        <button className="button-style-2">
+        <Link to="" className="button-style-2">
           <CalendarIcon className="icon" />
           Book a table
-        </button>
-        <button className="button-style-3">Reservations</button>
+        </Link>
+        <Link to="" className="button-style-3">
+          Reservations
+        </Link>
       </div>
     </div>
   );

@@ -1,0 +1,82 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 40px 80px;
+  gap: 16px;
+}
+
+#copyright-notice {
+  letter-spacing: 3px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+#footer-text-logo {
+  height: 30px;
+  fill: white;
+}
+
+#footer-slang {
+  font-family: "Playwrite";
+  font-size: 24px;
+  color: #dfdfdf;
+  text-align: center;
+}
+
+footer .links-sections-container {
+  margin: 20px 0;
+  display: flex;
+  align-self: center;
+  gap: 80px;
+  max-width: 1000px;
+}
+
+footer .links-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer .title-and-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+footer .title {
+  color: orange;
+}
+
+footer .link {
+  text-wrap: nowrap;
+  color: rgb(187, 187, 187);
+  transition: all 0.3s ease;
+}
+
+footer .link:hover {
+  color: white;
+}
+
+footer .brand-section {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 12px;
+}
+
+footer .title-under-logo {
+  font-family: "Playwrite";
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+footer .description {
+  letter-spacing: 1px;
+  line-height: 34px;
+  font-size: 14px;
+}
