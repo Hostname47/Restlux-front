@@ -1,3 +1,8 @@
+#admin-sidebar * {
+  color: #efefef;
+  fill: #efefef;
+}
+
 #admin-sidebar .logo {
   height: 30px;
   fill: white;
@@ -8,4 +13,65 @@
   justify-content: center;
   padding: 30px 0;
   border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+#admin-sidebar .search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+#admin-sidebar .search .input {
+  background-color: unset;
+  width: 100%;
+  border: none;
+  padding: 12px 16px 12px 52px;
+  border-radius: 0;
+  outline: none;
+}
+
+#admin-sidebar .search .icon {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  fill: gray;
+  left: 22px;
+}
+
+#admin-sidebar .buttons-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#admin-sidebar .button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px;
+  margin: 0 10px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+#admin-sidebar .button:hover {
+  background-color: rgb(19, 19, 19);
+}
+
+#admin-sidebar .button .icon {
+  width: 20px;
+  height: 20px;
+}
+
+#admin-sidebar .button .title {
+  letter-spacing: 0.6px;
+}
+
+#admin-sidebar .button .chevron {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
 }
