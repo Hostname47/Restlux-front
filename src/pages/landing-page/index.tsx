@@ -6,6 +6,7 @@ import MenusSection from "./components/MenusSection";
 import StatsSection from "./components/StatsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import "./styles.css";
+import VideoSection from "./components/VideoSection";
 
 function LandingPage() {
   return (
@@ -13,6 +14,7 @@ function LandingPage() {
       <LandingFirstSection />
       <AboutSection />
       <MenusSection />
+      <VideoSection />
       <TestimonialsSection />
       <NewsletterSection />
       <StatsSection />

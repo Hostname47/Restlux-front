@@ -128,7 +128,7 @@ h2 span {
 }
 
 #landing-page-about-section > div .content {
-  letter-spacing: 1px;
+  letter-spacing: 4px;
   line-height: 36px;
   font-weight: 300;
   margin-bottom: 12px;
@@ -256,7 +256,7 @@ h2 span {
 }
 
 #landing-page-newsletter-section .illustration {
-  height: 290px;
+  height: 326px;
 }
 
 #landing-page-newsletter-section .content {
@@ -309,8 +309,9 @@ h2 span {
 }
 
 #landing-page .section-title {
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-size: 30px;
+  font-weight: 500;
 }
 
 #landing-page-menus-section .columns {
@@ -370,4 +371,50 @@ h2 span {
   letter-spacing: 1.5px;
   font-size: 14px;
   color: #c7c7c7;
+}
+
+#landing-page-video-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 540px;
+  overflow: hidden;
+}
+
+#landing-page-video-section .shadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 26px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+#landing-page-video-section video {
+  width: 100%;
+  display: flex;
+  position: relative;
+  bottom: 26px;
+}
+
+#landing-page-video-section .ornament {
+  width: 120px;
+  height: auto;
+  fill: #cdad83;
+}
+
+#landing-page-video-section .first-title {
+  font-weight: 300;
+  letter-spacing: 8px;
+}
+
+#landing-page-video-section .second-title {
+  font-weight: 200;
+  letter-spacing: 6px;
 }
