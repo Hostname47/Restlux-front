@@ -59,7 +59,9 @@ function TestimonialsSection() {
 
           <div className="nav-buttons">
             {Array.from({ length: testimonials.length }, (_, i) => (
-              <button onClick={() => set(i)}>{i + 1}</button>
+              <button key={i} type="button" onClick={() => set(i)}>
+                {i + 1}
+              </button>
             ))}
           </div>
         </div>

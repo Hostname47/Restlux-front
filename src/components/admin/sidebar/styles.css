@@ -1,0 +1,11 @@
+#admin-sidebar .logo {
+  height: 30px;
+  fill: white;
+}
+
+#admin-sidebar .logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  border-bottom: 1px solid rgb(73, 73, 73);
+}

@@ -505,6 +505,7 @@ h2 span {
 }
 
 #landing-page-testimonials button {
+  font-weight: 600;
   position: relative;
   color: black;
   border-bottom: 4px double #cdad83;

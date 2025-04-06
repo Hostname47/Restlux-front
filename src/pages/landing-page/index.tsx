@@ -7,10 +7,11 @@ import StatsSection from "./components/StatsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import "./styles.css";
 import VideoSection from "./components/VideoSection";
+import ClientLayout from "../../layout/client";
 
 function LandingPage() {
   return (
-    <div id="landing-page">
+    <ClientLayout id="landing-page">
       <LandingFirstSection />
       <AboutSection />
       <MenusSection />
@@ -19,7 +20,7 @@ function LandingPage() {
       <NewsletterSection />
       <StatsSection />
       <Footer />
-    </div>
+    </ClientLayout>
   );
 }
 

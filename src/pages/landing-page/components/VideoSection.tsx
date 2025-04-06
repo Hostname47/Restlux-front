@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import video from "../../../assets/videos/sharpening-knife.mp4";
 import Ornament from "../../../components/icons/LoginIcon copy";
 
@@ -15,6 +16,9 @@ function VideoSection() {
         <p className="second-title">
           Sharpening <b>more</b> than knives—sharpening the art of fine cuisine.
         </p>
+        <Link to="" className="button-style-4">
+          Read more
+        </Link>
       </div>
       <video controls={false} autoPlay muted playsInline loop preload="none">
         <source src={video} type="video/mp4" />
