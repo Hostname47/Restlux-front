@@ -10,11 +10,6 @@ body,
   background-color: rgb(241, 241, 241);
 }
 
-#admin-sidebar {
-  background-color: black;
-  width: 320px;
-}
-
 #admin-page-container {
   display: flex;
   flex-direction: column;

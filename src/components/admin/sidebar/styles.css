@@ -1,3 +1,10 @@
+#admin-sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 300px;
+}
+
 #admin-sidebar * {
   color: #efefef;
   fill: #efefef;
@@ -43,6 +50,14 @@
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+  flex: 1;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#admin-sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 #admin-sidebar .button {
@@ -52,9 +67,10 @@
   padding: 13px;
   margin: 0 10px;
   padding-right: 20px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   border-radius: 6px;
+  outline: none;
 }
 
 #admin-sidebar .button:hover {
@@ -74,4 +90,15 @@
   width: 16px;
   height: 16px;
   margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+#admin-sidebar .button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#admin-sidebar .button-collapsible-area {
+  margin-left: 32px;
+  border-left: 3px solid #2b2b2b;
 }

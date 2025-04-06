@@ -302,6 +302,10 @@ button {
   font-family: "Italian1";
 }
 
+.full-width {
+  width: 100%;
+}
+
 @keyframes spin {
   from {
     transform: none;
