@@ -227,7 +227,7 @@ h2 span {
 #landing-page-newsletter-section {
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+  padding: 70px 0;
   background-color: #f2f2f2;
 }
 
@@ -417,4 +417,101 @@ h2 span {
 #landing-page-video-section .second-title {
   font-weight: 200;
   letter-spacing: 6px;
+}
+
+#landing-page-testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  background-color: white;
+}
+
+#landing-page-testimonials > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 32px;
+}
+
+#landing-page-testimonials .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  transition: opacity 0.4s linear;
+  padding-bottom: 50px;
+}
+
+#landing-page-testimonials .content.fade-in {
+  opacity: 1;
+}
+
+#landing-page-testimonials .content.fade-out {
+  opacity: 0;
+}
+
+#landing-page-testimonials .image {
+  height: 340px;
+}
+
+#landing-page-testimonials .stars {
+  display: flex;
+  gap: 12px;
+}
+
+#landing-page-testimonials .star {
+  height: 18px;
+}
+
+#landing-page-testimonials .brackets {
+  color: #b5874b;
+  font-family: "Italian1";
+  font-size: 100px;
+  line-height: 40px;
+  user-select: none;
+  margin-left: 30px;
+  margin-bottom: 18px;
+  transform: rotate(180deg);
+}
+
+#landing-page-testimonials .testim {
+  color: black;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 17px;
+  max-width: 340px;
+  line-height: 34px;
+  text-align: center;
+}
+
+#landing-page-testimonials .client {
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+#landing-page-testimonials .nav-buttons {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 26px;
+}
+
+#landing-page-testimonials button {
+  position: relative;
+  color: black;
+  border-bottom: 4px double #cdad83;
+  padding: 3px 4px;
+  transition: all 0.2s ease;
+}
+
+#landing-page-testimonials button:hover {
+  padding-bottom: 6px;
 }

@@ -52,32 +52,46 @@ function NewsletterSection() {
                 content={error}
                 color="red"
                 showCloseButton
+                styles={{ marginTop: 8 }}
                 onCloseButtonClick={() => setError("")}
               />
             )}
-            {notice && <FormMessage content={notice} color="green" />}
-            <label htmlFor="email-input">
-              Email <span className="red">*</span>
-            </label>
-            <input
-              type="text"
-              id="email-input"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="email-input"
-              placeholder="Your email here.."
-            />
-            <button
-              className="button-style-5"
-              disabled={submitting}
-              onClick={send}
-            >
-              <div className="icon-box">
-                <MessageIcon className="icon" opacity={submitting ? 0 : 1} />
-                <LoadingSpinner shown={submitting} absolute />
-              </div>
-              SUBSCRIBE
-            </button>
+            {notice && (
+              <FormMessage
+                content={notice}
+                color="green"
+                styles={{ marginTop: 16 }}
+              />
+            )}
+            {notice === "" && (
+              <>
+                <label htmlFor="email-input">
+                  Email <span className="red">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="email-input"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="email-input"
+                  placeholder="Your email here.."
+                />
+                <button
+                  className="button-style-5"
+                  disabled={submitting}
+                  onClick={send}
+                >
+                  <div className="icon-box">
+                    <MessageIcon
+                      className="icon"
+                      opacity={submitting ? 0 : 1}
+                    />
+                    <LoadingSpinner shown={submitting} absolute />
+                  </div>
+                  SUBSCRIBE
+                </button>
+              </>
+            )}
           </form>
         </div>
       </div>
