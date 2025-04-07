@@ -11,8 +11,16 @@ import RulerAndPenIcon from "../../icons/RulerAndPenIcon";
 import EyeIcon from "../../icons/EyeIcon";
 import StackIcon from "../../icons/StackIcon";
 import { Button, Clickable } from "./types";
+import LinkIcon from "../../icons/LinkIcon";
 
 export const allButtons: Button[] = [
+  {
+    title: "Go to website",
+    to: "/",
+    keywords: "website restlux front landing page",
+    Icon: LinkIcon,
+    target: "_blank",
+  },
   {
     title: "Dashboard",
     to: "/admin/dashboard",
@@ -94,6 +102,13 @@ export const allButtons: Button[] = [
         keywords: "voir see all subscriptions abonnées list consulter",
         Icon: RulerAndPenIcon,
       },
+      {
+        title: "Clients subscriptions",
+        to: "/admin/clients/subs",
+        keywords:
+          "voir see all client subscriber subscriptions abonnées list consulter",
+        Icon: RulerAndPenIcon,
+      },
     ],
   },
   {
@@ -109,8 +124,8 @@ export const allButtons: Button[] = [
     Icon: StackIcon,
   },
   {
-    title: "Roles & Permissions",
-    to: "/admin/security",
+    title: "Management & Access",
+    to: "/admin/management",
     keywords: "roles permissions security employees gestion droit access",
     Icon: ThunderIcon,
   },

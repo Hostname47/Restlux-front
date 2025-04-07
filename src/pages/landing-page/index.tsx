@@ -16,8 +16,8 @@ function LandingPage() {
       <AboutSection />
       <MenusSection />
       <VideoSection />
-      <TestimonialsSection />
       <NewsletterSection />
+      <TestimonialsSection />
       <StatsSection />
       <Footer />
     </ClientLayout>

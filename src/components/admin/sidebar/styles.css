@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   background-color: black;
-  width: 300px;
+  width: 290px;
 }
 
 #admin-sidebar * {
-  color: #efefef;
+  color: #d7d7d7;
   fill: #efefef;
 }
 
@@ -64,7 +64,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 13px;
+  padding: 10px 13px;
   margin: 0 10px;
   padding-right: 20px;
   font-size: 15px;
@@ -73,13 +73,22 @@
   outline: none;
 }
 
+#admin-sidebar .button * {
+  transition: all 0.2s ease;
+}
+
 #admin-sidebar .button.current * {
-  color: #cdad83;
-  fill: #cdad83;
+  color: #cdad83 !important;
+  fill: #cdad83 !important;
 }
 
 #admin-sidebar .button:hover {
   background-color: rgb(19, 19, 19);
+}
+
+#admin-sidebar .button:hover * {
+  color: white;
+  fill: white;
 }
 
 #admin-sidebar .button .icon {
@@ -105,5 +114,5 @@
 
 #admin-sidebar .button-collapsible-area {
   margin-left: 32px;
-  border-left: 3px solid #2b2b2b;
+  border-left: 2px solid #2b2b2b;
 }

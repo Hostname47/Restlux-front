@@ -1,5 +1,6 @@
 export type Clickable = {
   to: string;
+  target?: string;
 };
 
 export type Collapsible = {

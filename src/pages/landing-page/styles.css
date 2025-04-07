@@ -221,9 +221,6 @@ h2 span {
   line-height: 60px;
 }
 
-#landing-page-offers-section {
-}
-
 #landing-page-newsletter-section {
   display: flex;
   justify-content: center;
@@ -233,7 +230,6 @@ h2 span {
 
 #landing-page-newsletter-section > div {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 46px;
 }

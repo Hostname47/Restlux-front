@@ -6,6 +6,7 @@ function ClickableButton({ button }: { button: Button & Clickable }) {
 
   return (
     <Link
+      target={button.target}
       to={button.to}
       className={`button ${location.pathname == button.to ? "current" : ""}`}
     >

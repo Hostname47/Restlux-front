@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import TextLogo from "../../logos/TextLogo";
 import "./styles.css";
 import { allButtons, sidebarFlatButtons } from "./buttons";
@@ -50,4 +50,4 @@ function AdminSidebar() {
   );
 }
 
-export default AdminSidebar;
+export default React.memo(AdminSidebar);

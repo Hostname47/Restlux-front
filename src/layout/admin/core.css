@@ -16,7 +16,18 @@ body,
   flex: 1;
 }
 
-#admin-page-content * {
+#admin-page-content {
   flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#admin-page-content.padded {
+  padding: 12px 16px;
+}
+
+#admin-page-content * {
   color: black;
 }
