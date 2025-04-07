@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import TextLogo from "../../logos/TextLogo";
 import "./styles.css";
-import { allButtons, getSidebarButton, sidebarFlatButtons } from "./buttons";
+import { allButtons, sidebarFlatButtons } from "./buttons";
 import SearchIcon from "../../icons/SearchIcon";
 import SidebarButton from "./components/SidebarButton";
 import { Button } from "./types";
-import { useLocation } from "react-router";
 
 function AdminSidebar() {
-  const location = useLocation();
   const [buttons, setButtons] = useState<Button[]>(allButtons);
   const [query, setQuery] = useState("");
 
@@ -23,8 +21,6 @@ function AdminSidebar() {
       setButtons(allButtons);
     }
   };
-
-  const route = getSidebarButton(location.pathname);
 
   useEffect(() => {
     searchFor(query);

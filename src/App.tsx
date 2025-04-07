@@ -4,6 +4,8 @@ import { store } from "./app/store";
 import LandingPage from "./pages/landing-page/index";
 import AdminDashboard from "./pages/admin-area/dashboard";
 import AdminStatisticsPage from "./pages/admin-area/statistics";
+import AdminAddProductPage from "./pages/admin-area/orders/add";
+import AdminProductsIndexPage from "./pages/admin-area/orders/index";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/statistics" element={<AdminStatisticsPage />} />
+          <Route path="/admin/orders/add" element={<AdminAddProductPage />} />
+          <Route path="/admin/orders" element={<AdminProductsIndexPage />} />
         </Routes>
       </BrowserRouter>
     </Provider>

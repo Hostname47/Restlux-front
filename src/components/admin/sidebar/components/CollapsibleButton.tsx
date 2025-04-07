@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import RightChevron from "../../../icons/RightChevron";
 import { Button, Collapsible } from "../types";
 import SidebarButton from "./SidebarButton";
+import { useLocation } from "react-router";
 
 function CollapsibleButton({ button }: { button: Button & Collapsible }) {
+  const location = useLocation();
   const [opened, setOpened] = useState(false);
+
+  useEffect(() => {
+    button.buttons.forEach((b) => {
+      if ("to" in b && b.to == location.pathname) {
+        setOpened(true);
+        return;
+      }
+    });
+  }, [location.pathname, button.buttons]);
 
   return (
     <div className="button-container">
@@ -19,7 +30,7 @@ function CollapsibleButton({ button }: { button: Button & Collapsible }) {
       {opened && (
         <div className="button-collapsible-area">
           {button.buttons.map((btn: Button) => (
-            <SidebarButton button={btn} />
+            <SidebarButton key={btn.title} button={btn} />
           ))}
         </div>
       )}
