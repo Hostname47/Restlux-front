@@ -1,5 +1,4 @@
 export type Clickable = {
-  Icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   to: string;
 };
 

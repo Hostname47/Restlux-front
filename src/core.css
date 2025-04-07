@@ -264,7 +264,7 @@ button {
 }
 
 .button-style-5:disabled {
-  background-color: #e3a7e4 !important;
+  background-color: #aaaaaa !important;
   cursor: default;
 }
 

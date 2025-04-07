@@ -1,9 +1,14 @@
-import { Link } from "react-router";
-import { Clickable } from "../types";
+import { Link, useLocation } from "react-router";
+import { Button, Clickable } from "../types";
 
-function ClickableButton({ button }: { button: Clickable }) {
+function ClickableButton({ button }: { button: Button & Clickable }) {
+  const location = useLocation();
+
   return (
-    <Link to={button.to} className="button">
+    <Link
+      to={button.to}
+      className={`button ${location.pathname == button.to ? "current" : ""}`}
+    >
       {button.Icon && <button.Icon className="icon" />}
       <div className="button-title-container">
         <span className="title">{button.title}</span>

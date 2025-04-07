@@ -73,6 +73,11 @@
   outline: none;
 }
 
+#admin-sidebar .button.current * {
+  color: #cdad83;
+  fill: #cdad83;
+}
+
 #admin-sidebar .button:hover {
   background-color: rgb(19, 19, 19);
 }

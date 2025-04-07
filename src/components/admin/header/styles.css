@@ -1,12 +1,34 @@
 #admin-header {
+  display: flex;
+  align-items: center;
+  padding: 0 26px;
   height: 66px;
   background-color: white;
   width: 100%;
   border-bottom: 1px solid #e7e7e7;
   box-shadow: 0 0 6px -4px #80808054;
+  box-sizing: border-box;
 }
 
 #admin-header * {
   fill: black;
   color: black;
+}
+
+#admin-header .title-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#admin-header .title {
+  font-size: 18px;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+#admin-header .icon {
+  width: 24px;
+  height: 24px;
 }
