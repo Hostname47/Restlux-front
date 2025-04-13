@@ -1,4 +1,4 @@
-import ToTheStars from "../../../assets/images/svgs/flat/stars.svg";
+import ToTheStars from "../../../../assets/images/svgs/flat/stars.svg";
 
 function StatsSection() {
   return (

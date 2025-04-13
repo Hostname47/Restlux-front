@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import CalendarIcon from "../../../components/icons/CalendarIcon";
+import CalendarIcon from "../../../../components/icons/CalendarIcon";
 
 function LandingFirstSection() {
   return (

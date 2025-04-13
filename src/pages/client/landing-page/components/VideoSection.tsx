@@ -1,6 +1,6 @@
 import { Link } from "react-router";
-import video from "../../../assets/videos/sharpening-knife.mp4";
-import Ornament from "../../../components/icons/LoginIcon copy";
+import video from "../../../../assets/videos/sharpening-knife.mp4";
+import Ornament from "../../../../components/icons/LoginIcon copy";
 
 function VideoSection() {
   return (

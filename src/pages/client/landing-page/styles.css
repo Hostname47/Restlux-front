@@ -6,7 +6,7 @@
 }
 
 #landing-first-section {
-  background-image: url(../../assets/images/1st-landing.jpg);
+  background-image: url(../../../assets/images/1st-landing.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 -76px;
@@ -276,6 +276,7 @@ h2 span {
 #landing-page-newsletter-section .email-input {
   padding: 10px 16px;
   border: 1px solid rgb(179, 180, 184);
+  background-color: white;
   border-radius: 3px;
   outline: none;
   letter-spacing: 1px;

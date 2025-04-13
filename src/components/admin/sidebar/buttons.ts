@@ -83,6 +83,19 @@ export const allButtons: Button[] = [
         keywords: "manage gerer gestion voir see all menus list consulter",
         Icon: RulerAndPenIcon,
       },
+      {
+        title: "Menus",
+        Icon: MenusIcon,
+        keywords: "Menus لوائح لائحة خقيثقس meal",
+        buttons: [
+          {
+            title: "Create a menu (test deep buttons)",
+            to: "/admin/menus/add",
+            keywords: "create a menu menus add ajouter",
+            Icon: PlusIcon,
+          },
+        ],
+      },
     ],
   },
   {

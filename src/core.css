@@ -3,6 +3,8 @@
   padding: 0;
   font-family: "Karla", Arial, Helvetica, sans-serif;
   color: white;
+  background-color: unset;
+  border: unset;
 }
 
 @font-face {
@@ -124,6 +126,8 @@ body {
 
 a {
   text-decoration: none;
+  color: #cdad83;
+  font-weight: 500;
 }
 
 button {
@@ -176,6 +180,7 @@ button {
 .button-style-2 {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   background-color: #e4e4e4;
   padding: 14px 19px;
@@ -186,6 +191,7 @@ button {
   letter-spacing: 2px;
   border-radius: 2px;
   font-size: 15px;
+  user-select: none;
   transition: all 0.3s ease;
 }
 
@@ -268,6 +274,31 @@ button {
   cursor: default;
 }
 
+.button-style-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 18px;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 0.8px;
+  background-color: rgb(15, 15, 15);
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.button-style-6:hover {
+  background-color: black;
+}
+
+.button-style-6 .icon {
+  width: 18px;
+  height: 18px;
+}
+
 .right {
   margin-left: auto;
 }
@@ -304,6 +335,55 @@ button {
 
 .full-width {
   width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  color: #dbdbdb;
+}
+
+label.text {
+  color: #bdbdbd;
+  font-weight: 300;
+}
+
+form .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+form .input-container.same-line {
+  flex-direction: row;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.input-style-1 {
+  font-size: 17px;
+  padding: 10px 16px;
+  background-color: rgb(35 35 35);
+  border: 1px solid #4b4b4b;
+  border-radius: 2px;
+  outline: unset;
+}
+
+.input-style-1:hover {
+  background-color: rgb(30 30 30);
+}
+
+.input-style-1:focus {
+  background-color: rgb(24 24 24);
+}
+
+.red {
+  color: red;
 }
 
 @keyframes spin {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Star from "../../../components/icons/Star";
-import Image from "./../../../assets/images/svgs/flat/girl-flower.svg";
+import Star from "../../../../components/icons/Star";
+import Image from "./../../../../assets/images/svgs/flat/girl-flower.svg";
 
 const testims = [
   {

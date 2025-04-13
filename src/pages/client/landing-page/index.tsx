@@ -1,4 +1,4 @@
-import Footer from "../../components/footer";
+import Footer from "../../../components/footer";
 import AboutSection from "./components/AboutSection";
 import LandingFirstSection from "./components/LandingFirstSection";
 import NewsletterSection from "./components/NewsletterSection";
@@ -7,7 +7,7 @@ import StatsSection from "./components/StatsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import "./styles.css";
 import VideoSection from "./components/VideoSection";
-import ClientLayout from "../../layout/client";
+import ClientLayout from "../../../layout/client";
 
 function LandingPage() {
   return (

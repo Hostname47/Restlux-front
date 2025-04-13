@@ -67,7 +67,7 @@ function Header() {
         </button>
         <div className="separator-style-1"></div>
         <div className="auth">
-          <Link to="/sign-in" className="button-style-1">
+          <Link to="/login" className="button-style-1">
             <LoginIcon className="icon" />
             SIGN IN
           </Link>

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Messanger from "../../../assets/images/svgs/flat/messanger.svg";
-import MessageIcon from "../../../components/icons/MessageIcon";
-import FormMessage from "../../../components/form-message";
-import LoadingSpinner from "../../../components/loading-spinner";
+import Messanger from "../../../../assets/images/svgs/flat/messanger.svg";
+import MessageIcon from "../../../../components/icons/MessageIcon";
+import FormMessage from "../../../../components/form-message";
+import LoadingSpinner from "../../../../components/loading-spinner";
 
 function NewsletterSection() {
   const [submitting, setSubmitting] = useState(false);

@@ -1,7 +1,7 @@
-import Image0 from "../../../assets/images/vertical/0.jpg";
-import Image1 from "../../../assets/images/vertical/1.jpg";
-import Image2 from "../../../assets/images/vertical/2.jpg";
-import Image3 from "../../../assets/images/vertical/3.jpg";
+import Image0 from "../../../../assets/images/vertical/0.jpg";
+import Image1 from "../../../../assets/images/vertical/1.jpg";
+import Image2 from "../../../../assets/images/vertical/2.jpg";
+import Image3 from "../../../../assets/images/vertical/3.jpg";
 
 function AboutSection() {
   return (
