@@ -195,6 +195,11 @@ button {
   transition: all 0.3s ease;
 }
 
+.button-style-2:disabled {
+  background-color: #e5e5e5 !important;
+  cursor: default;
+}
+
 .button-style-2:hover {
   background-color: white;
   color: black;
@@ -311,7 +316,7 @@ button {
 }
 
 .red {
-  color: rgb(255, 42, 42);
+  color: #ff4f4f;
 }
 
 .black {

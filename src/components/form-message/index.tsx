@@ -14,14 +14,15 @@ type FormMessageProps = {
   showCloseButton?: boolean;
   onCloseButtonClick?: () => void;
   styles?: CSSProperties;
+  theme?: "dark" | "light";
 };
 
 const getIcon = (color: MessageColor) => {
   switch (color) {
     case "red":
-      return { Icon: ErrorIcon, fill: "#a71717" };
+      return { Icon: ErrorIcon, fill: "#e94b4b" };
     case "green":
-      return { Icon: TickIcon, fill: "#2b922b" };
+      return { Icon: TickIcon, fill: "#35c935" };
     default:
       return { Icon: DocumentsIcon, fill: "#2a2d2e" };
   }
@@ -34,11 +35,12 @@ function FormMessage({
   showCloseButton,
   onCloseButtonClick,
   styles,
+  theme = "dark",
 }: FormMessageProps) {
   const Icon = getIcon(color);
 
-  return (
-    <div className={`form-message ${color}`} style={styles}>
+  return content == "" ? null : (
+    <div className={`form-message ${color} ${theme}`} style={styles}>
       {showIcon && <Icon.Icon className="form-message-icon" fill={Icon.fill} />}
       <p className={`form-message-content ${color}`}>{content}</p>
       {showCloseButton && (

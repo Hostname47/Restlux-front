@@ -53,6 +53,7 @@ function NewsletterSection() {
                 color="red"
                 showCloseButton
                 styles={{ marginTop: 8 }}
+                theme="light"
                 onCloseButtonClick={() => setError("")}
               />
             )}
@@ -61,6 +62,7 @@ function NewsletterSection() {
                 content={notice}
                 color="green"
                 styles={{ marginTop: 16 }}
+                theme="light"
               />
             )}
             {notice === "" && (

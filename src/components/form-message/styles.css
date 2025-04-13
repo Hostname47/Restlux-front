@@ -9,37 +9,49 @@
   gap: 6px;
   box-sizing: border-box;
 }
+
+.form-message.dark.green {
+  background-color: #263128;
+  border: 1px solid #448d5b;
+}
 .form-message.green {
   background-color: #f3fff5;
   border: 1px solid #84b292;
 }
-.form-message.red {
+
+.form-message.red.light {
   background-color: #fff7f7;
   border: 1px solid #e16060;
+}
+
+.form-message.red.dark {
+  background-color: #2d2929;
+  border: 1px solid #9d3131;
 }
 
 .form-message-content {
   flex: 1;
   font-size: 14px;
-  font-weight: 600;
   color: #2a2d2e;
   margin-top: 2px;
 }
-.form-message-content.green {
-  color: #2c792c;
+.form-message.dark .form-message-content.green {
+  color: #6add6a;
 }
-.form-message-content.red {
-  color: #ca2323;
+.form-message.light .form-message-content.green {
+  color: #22a922;
+}
+.form-message.dark .form-message-content.red {
+  color: #ff5b5b;
+}
+.form-message.light .form-message-content.red {
+  color: #cf3e3e;
 }
 
 .form-message-icon {
   width: 20px;
   height: 20px;
   margin-top: 1px;
-}
-
-.form-message-close-button:hover {
-  background-color: #2a2d2e15;
 }
 
 .form-message-close-button {
@@ -51,8 +63,16 @@
   border-radius: 3px;
 }
 
+.form-message.light .form-message-close-button:hover {
+  background-color: #e0e0e0;
+}
+
+.form-message-close-button:hover {
+  background-color: #3b3b3b;
+}
+
 .form-message-close-icon {
   width: 18px;
   height: 18px;
-  fill: #2a2d2e;
+  fill: #838a92;
 }
