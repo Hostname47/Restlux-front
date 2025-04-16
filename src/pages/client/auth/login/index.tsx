@@ -69,6 +69,11 @@ function LoginPage() {
             sameSite: "Strict",
             expires: remember ? 90 : 1,
           });
+
+          // Set axios header globally
+          axios.defaults.headers.common[
+            "Authorization"
+          ] = `Bearer ${response.data.token}`;
           dispatch(loginUser(response.data.user));
           navigate("/home");
         })

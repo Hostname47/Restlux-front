@@ -3,8 +3,9 @@ import "./styles.css";
 
 function HomePage() {
   return (
-    <ClientLayout>
-      <p>Hello world</p>
+    <ClientLayout id="home-page">
+      <div className="sidebar"></div>
+      <div className="body"></div>
     </ClientLayout>
   );
 }

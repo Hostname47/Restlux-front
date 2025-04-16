@@ -145,6 +145,58 @@ button {
   align-items: center;
 }
 
+#global-loading-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#global-loading-area .logo-container {
+  display: flex;
+}
+
+#global-loading-area .r,
+#global-loading-area .moving-logo {
+  width: 170px;
+  min-width: 170px;
+  fill: white;
+}
+
+#global-loading-area .moving-logo-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 28px;
+  overflow: hidden;
+  transition: width 0.8s ease;
+}
+
+#global-loading-area .r-container {
+  display: flex;
+  overflow: hidden;
+  width: 28px;
+}
+
+#global-loading-area .wait-box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 18px;
+}
+
+#global-loading-area .wait {
+  font-size: 15px;
+  color: #bdbdbd;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin-top: -1px;
+}
+
 .button-style-1 {
   display: flex;
   align-items: center;
@@ -170,6 +222,13 @@ button {
 .button-style-1:hover {
   color: #cdad83;
   fill: #cdad83;
+}
+
+.button-style-1 .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .button-style-1 .icon {
