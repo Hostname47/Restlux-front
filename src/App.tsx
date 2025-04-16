@@ -8,6 +8,12 @@ import AdminAddProductPage from "./pages/admin/orders/add";
 import AdminProductsIndexPage from "./pages/admin/orders/index";
 import AdminSecurityAccessPage from "./pages/admin/roles-and-permissions";
 import LoginPage from "./pages/client/auth/login";
+import axios from "axios";
+import HomePage from "./pages/client/home";
+
+axios.defaults.withCredentials = true;
+axios.defaults.withXSRFToken = true;
+axios.defaults.baseURL = "http://localhost:8000";
 
 function App() {
   return (
@@ -16,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/statistics" element={<AdminStatisticsPage />} />
           <Route path="/admin/orders/add" element={<AdminAddProductPage />} />

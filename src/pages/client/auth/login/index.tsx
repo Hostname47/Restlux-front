@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import GoogleIcon from "../../../../components/icons/GoogleIcon";
 import ClientLayout from "../../../../layout/client";
 import "../styles.css";
@@ -7,13 +7,18 @@ import { useState } from "react";
 import FormMessage from "../../../../components/form-message";
 import axios from "axios";
 import LoadingSpinner from "../../../../components/loading-spinner";
+import { useAppDispatch } from "../../../../app/hooks";
+import { loginUser } from "../../../../features/global/globalSlice";
+import Cookies from "js-cookie";
 
 function LoginPage() {
-  const [login, setLogin] = useState("");
-  const [password, setPassword] = useState("");
+  const [login, setLogin] = useState("mouad@gmail.com");
+  const [password, setPassword] = useState("mouad123");
   const [remember, setRemember] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   const handleLogin = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
@@ -29,9 +34,15 @@ function LoginPage() {
       return;
     }
 
-    let data:
-      | { email: string; password: string }
-      | { username: string; password: string };
+    const data: {
+      email?: string;
+      username?: string;
+      password: string;
+      remember: number;
+    } = {
+      password: password.trim(),
+      remember: remember ? 1 : 0,
+    };
 
     if (login.includes("@")) {
       // Email-based login
@@ -40,24 +51,33 @@ function LoginPage() {
         return;
       }
 
-      data = { email: login.trim(), password: password.trim() };
+      data.email = login.trim();
     } else {
       // Username-based login
-      data = { username: login.trim(), password: password.trim() };
+      data.username = login.trim();
     }
 
     setError("");
     setSubmitting(true);
 
-    axios
-      .post("http://127.0.0.1:8000/api/login", data)
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        setError(error.response.data.message);
-        setSubmitting(false);
-      });
+    axios.get("/sanctum/csrf-cookie").then(() => {
+      axios
+        .post("api/login", data)
+        .then((response) => {
+          Cookies.set("auth_token", response.data.token, {
+            secure: true, // only over HTTPS
+            sameSite: "Strict",
+            expires: remember ? 90 : 1,
+          });
+          dispatch(loginUser(response.data.user));
+          navigate("/home");
+        })
+        .catch((error) => {
+          console.error("Login error:", error);
+          setError(error?.response?.data?.message ?? "Login failed");
+          setSubmitting(false);
+        });
+    });
   };
 
   return (
@@ -130,6 +150,7 @@ function LoginPage() {
           </div>
 
           <button
+            type="submit"
             className="button-style-2 full-width"
             onClick={handleLogin}
             disabled={submitting}
