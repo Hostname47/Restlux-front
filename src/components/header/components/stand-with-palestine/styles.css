@@ -1,0 +1,14 @@
+#top-message-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: black;
+  border-bottom: 1px solid rgb(67, 67, 67);
+}
+
+#top-message-bar .message {
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
