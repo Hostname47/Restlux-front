@@ -9,7 +9,9 @@ function TopMessageBar({
 }) {
   return (
     <div id="top-message-bar" style={{ display: shown ? "flex" : "none" }}>
-      <p className="message">{message}</p>
+      <p color="#9ba1ad" className="message">
+        {message}
+      </p>
     </div>
   );
 }

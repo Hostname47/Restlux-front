@@ -15,6 +15,7 @@ import { useAppSelector } from "../../app/hooks";
 import LinkIcon from "../icons/LinkIcon";
 import LogoutButton from "./components/logout-button";
 import TopMessageBar from "./components/stand-with-palestine";
+import UserImage from "./components/user-image";
 
 function Header() {
   const { user } = useAppSelector((state) => state.global);
@@ -83,8 +84,8 @@ function Header() {
           <div className="auth">
             {user ? (
               <>
-                <button className="button-style-1">
-                  <UserIcon style={{ width: 26, height: 26 }} />
+                <button className="button-style-1" style={{ gap: 8 }}>
+                  <UserImage user={user} />
                   {user.fullname}
                   <DownChevronIcon style={{ width: 12, height: 12 }} />
                 </button>

@@ -1,0 +1,14 @@
+#header-user-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  background: linear-gradient(2deg, #a89074, #ff8e00);
+}
+
+#header-user-image .character {
+  font-weight: 600;
+}

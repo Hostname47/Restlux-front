@@ -1,0 +1,25 @@
+#home-page .menu-container .menu-item .name-and-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#home-page .menu-container .menu-item .name {
+  color: #cdad83;
+  font-size: 13px;
+}
+
+#home-page .menu-container .menu-item .line-between {
+  flex: 1;
+  height: 3px;
+  border: 1px solid rgb(69, 69, 69);
+  border-left: unset;
+  border-right: unset;
+}
+
+#home-page .menu-container .menu-item .desc {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #cccccc;
+}
