@@ -481,8 +481,8 @@ form .input-container.same-line {
 }
 
 .line-square-title .square {
-  width: 5px;
-  height: 5px;
+  width: 3px;
+  height: 3px;
   border: 2px solid gray;
   transform: rotate(45deg);
 }

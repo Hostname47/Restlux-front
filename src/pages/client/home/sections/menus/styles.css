@@ -2,17 +2,32 @@
   display: flex;
   gap: 10px;
   margin-top: 16px;
+  padding: 12px;
+  background: #17130e;
+  background: linear-gradient(
+    233deg,
+    rgba(23, 19, 14, 1) 0%,
+    rgba(0, 0, 0, 1) 90%
+  );
+  border-radius: 4px;
 }
 
 #home-page .menu-container .page {
   flex: 1;
-  padding: 20px;
-  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  border-radius: 8px;
+}
+
+#home-page .menu-container .page-separator {
+  width: 8px;
+  border: 1px solid #242424;
+  border-top: unset;
+  border-bottom: unset;
+}
+
+#home-page .menu-container .page:last-of-type .menus-row:last-of-type {
+  margin-top: 12px;
 }
 
 #home-page .menu-container .page .metadata {
@@ -21,8 +36,13 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  width: 260px;
-  margin-top: 32px;
+  margin-top: 20px;
+}
+
+#home-page .menu-container .page .logo {
+  height: 30px;
+  fill: white;
+  margin: 0 16px;
 }
 
 #home-page .menu-container .page .first-image {
@@ -34,7 +54,7 @@
   background-position: center center;
   background-size: cover;
   margin-top: -42px;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
 }
 
 #home-page .menu-container .page .curved-title {
@@ -49,63 +69,74 @@
 }
 
 #home-page .menu-container .menu-box {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   padding: 12px;
-  border: 1px solid gray;
-  border-radius: 12px;
+  border-radius: 4px;
+  background-color: #222222;
 }
 
 #home-page .menu-container .menu-box:hover {
-  cursor: pointer;
-  background-color: rgb(19, 19, 18);
+  background-color: rgb(39, 39, 39);
 }
 
 #home-page .menu-container .menu-box.special {
-  border-color: #cdad83;
-  background-color: #201911;
+  background: #4a3d29;
+  background: linear-gradient(180deg, rgb(44 37 27) 0%, rgb(24 24 24) 75%);
 }
 
 #home-page .menu-container .menu-box .title {
   font-weight: 500;
   text-align: center;
   letter-spacing: 4px;
-  margin: 5px 0;
+  margin: 6px 12px 6px 12px;
+  font-size: 18px;
 }
 
 #home-page .menu-container .menu-box.special .title {
   font-size: 27px;
   font-weight: 500;
   font-family: Italian1;
+  line-height: 30px;
 }
 
 #home-page .menu-container .menu-box .items {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 14px;
   margin-top: 16px;
 }
 
-#home-page .menu-container .follow-and-opening-section {
+#home-page .follow-and-opening-section {
   display: flex;
-  align-self: stretch;
-  align-items: flex-start;
-  gap: 8px;
-  margin-top: 12px;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+  background-color: black;
+  padding: 10px 26px;
+  justify-content: space-between;
+  letter-spacing: 2px;
   font-size: 13px;
 }
 
-#home-page .menu-container .instagram-icon {
+#home-menu-section .instagram-icon {
   width: 20px;
   height: 20px;
-  fill: #e1306c;
+  fill: #c441a3;
 }
 
-#home-page .menu-container .opening-and-delivery {
+#home-menu-section .opening-and-delivery {
   flex-direction: column;
   gap: 8px;
 }
 
-#home-page .menu-container .section {
+#home-menu-section .opening-and-delivery * {
+  color: rgb(142, 142, 142);
+  letter-spacing: 1px;
+}
+
+#home-menu-section .menu-container .section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,7 +144,28 @@
   flex: 1;
 }
 
-#home-page .menu-container .follow-box {
+#home-menu-section .follow-box {
+  display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 8px;
+  letter-spacing: 1px;
+}
+
+#home-menu-section .menu-container .open-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  letter-spacing: 1px;
+  color: #cdad83;
+  margin-top: auto;
+  width: 100%;
+  padding: 12px;
+}
+
+#home-menu-section .menu-container .open-button .icon {
+  width: 20px;
+  height: 20px;
+  fill: #cdad83;
 }

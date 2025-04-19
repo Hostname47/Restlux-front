@@ -33,7 +33,7 @@ function Header() {
         <ul>
           {user && user.isAdmin && (
             <li>
-              <Link to="/">
+              <Link to="/admin/dashboard">
                 <LinkIcon className="icon" />
                 ADMIN
               </Link>
@@ -46,25 +46,25 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/menus">
+            <Link to="/home#home-menu-section">
               <MenuIcon className="icon" />
               MENUS
             </Link>
           </li>
           <li>
-            <Link to="/reservations">
+            <Link to="/home#reservations">
               <CalendarIcon className="icon" />
               RESERVATIONS
             </Link>
           </li>
           <li>
-            <Link to="subscriptions">
+            <Link to="/home#subscriptions">
               <SubscriptionIcon className="icon" />
               SUBSCRIPTIONS
             </Link>
           </li>
           <li>
-            <Link to="contact">
+            <Link to="/contact">
               <MessageIcon className="icon" />
               CONTACT
             </Link>
