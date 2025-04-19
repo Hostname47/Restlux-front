@@ -1,0 +1,99 @@
+#home-page .sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  background-color: black;
+  border-right: 1px solid #292929;
+  position: fixed;
+  left: 0;
+  top: 103px;
+  bottom: 0;
+}
+
+#client-sidebar-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #292929;
+  background: linear-gradient(124deg, rgb(20 19 13) 0%, rgb(0 0 0) 75%);
+}
+
+#client-sidebar-search .input {
+  padding: 14px 18px 14px 40px;
+  flex: 1;
+  outline: none;
+}
+
+#client-sidebar-search .icon {
+  width: 20px;
+  height: 20px;
+  fill: gray;
+  position: absolute;
+  left: 14px;
+}
+
+#home-page .sidebar .sidebar-controls {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  flex: 1;
+}
+
+#home-page .sidebar .sidebar-controls .filters {
+  display: flex;
+  flex-direction: column;
+}
+
+#home-page .sidebar .filter-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#home-page .sidebar .filter-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+  outline: none;
+}
+
+#home-page .sidebar .filter-button:hover {
+  background: #29291f;
+  background: linear-gradient(52deg, rgb(24 24 18) 0%, rgb(12 12 10) 64%);
+  border-color: #4e3b23;
+}
+
+#home-page .sidebar .title-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+#home-page .sidebar .title-icon {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+#home-page .sidebar .title {
+  color: #cdad83;
+  letter-spacing: 1px;
+  margin: 6px 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#home-page .sidebar .description {
+  color: #d2d2d2;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 2px;
+}

@@ -1,4 +1,4 @@
-function SearchIcon({ ...props }) {
+function SearchIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

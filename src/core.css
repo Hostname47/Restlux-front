@@ -494,6 +494,46 @@ form .input-container.same-line {
   margin: 0 12px;
 }
 
+.checkbox {
+  width: 13px;
+  height: 13px;
+  border: 1.6px solid #e4e4e4;
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.checkbox .tick {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  fill: #178e17;
+  background-color: #e4e4e4;
+  padding: 4px;
+}
+
+.radio {
+  width: 13px;
+  height: 13px;
+  border: 1.6px solid #e4e4e4;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio .circle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #34b934;
+}
+
 @keyframes spin {
   from {
     transform: none;

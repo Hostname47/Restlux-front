@@ -6,10 +6,11 @@ function HomeReservationSection() {
       <SmartLineSquareTitle
         format="lstsl"
         title="Reservations"
+        color="#e9c18d"
         fontFamily="Italian1"
         fontSize={34}
         linesWidth={60}
-        style={{ justifySelf: "center" }}
+        firstLineWidth={20}
       />
     </div>
   );

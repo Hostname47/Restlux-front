@@ -1,4 +1,4 @@
-function TickIcon({ ...props }) {
+function TickIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

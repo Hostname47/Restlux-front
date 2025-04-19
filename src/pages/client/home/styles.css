@@ -9,21 +9,10 @@
   height: 100%;
 }
 
-#home-page .sidebar {
-  width: 340px;
-  height: 100%;
-  background-color: black;
-  border-right: 1px solid #292929;
-  position: fixed;
-  left: 0;
-  top: 115px;
-  bottom: 0;
-}
-
 #home-page .content {
   flex: 1;
   padding: 16px;
-  margin-left: 340px;
+  margin-left: 310px;
   box-sizing: border-box;
 }
 

@@ -1,0 +1,37 @@
+#signature-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 2px;
+  width: max-content;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#signature-heart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  margin: 0 2px;
+}
+
+.signature-text {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.signature-text .link {
+  color: #23c4ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#signature {
+  height: 36px;
+  margin-top: 8px;
+  margin-right: 20px;
+}

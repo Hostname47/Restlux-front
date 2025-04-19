@@ -15,7 +15,8 @@ function HomeMenusSection() {
         fontFamily="Italian1"
         fontSize={34}
         linesWidth={60}
-        style={{ justifySelf: "center" }}
+        firstLineWidth={20}
+        color="#e9c18d"
       />
       <div className="menu-container">
         <div className="menu-preface page">

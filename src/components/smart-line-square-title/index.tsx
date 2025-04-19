@@ -9,6 +9,7 @@ type SmartLineSquareTitleType = {
   fontFamily: string;
   fontSize?: number;
   linesWidth?: number;
+  firstLineWidth?: number;
   squaresFilled?: boolean;
 };
 
@@ -21,6 +22,7 @@ function SmartLineSquareTitle({
   fontFamily,
   fontSize = 24,
   linesWidth = 80,
+  firstLineWidth = 0,
   squaresFilled = false,
   ...props
 }: SmartLineSquareTitleType) {
@@ -28,15 +30,25 @@ function SmartLineSquareTitle({
   console.log(components);
   return (
     <div className="line-square-title" {...props}>
-      {components.map((component) => {
+      {components.map((component, index) => {
         switch (component) {
           case "l":
             return (
               <div
                 className="line"
                 style={{
-                  width: linesWidth,
-                  maxWidth: linesWidth,
+                  width:
+                    index == 0
+                      ? firstLineWidth
+                        ? firstLineWidth
+                        : linesWidth
+                      : linesWidth,
+                  maxWidth:
+                    index == 0
+                      ? firstLineWidth
+                        ? firstLineWidth
+                        : linesWidth
+                      : linesWidth,
                   backgroundColor: itemsColor ?? "currentcolor",
                 }}
               />

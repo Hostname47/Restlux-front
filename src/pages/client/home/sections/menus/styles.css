@@ -74,11 +74,14 @@
   flex: 1;
   padding: 12px;
   border-radius: 4px;
-  background-color: #222222;
+  background: #4a3d29;
+  background: linear-gradient(180deg, rgb(24 24 24) 75%, rgb(24 24 24) 75%);
+  transition: all 0.4s ease;
 }
 
 #home-page .menu-container .menu-box:hover {
-  background-color: rgb(39, 39, 39);
+  background: #4a3d29;
+  background: linear-gradient(180deg, rgb(31, 31, 27) 0%, rgb(24, 24, 24) 70%);
 }
 
 #home-page .menu-container .menu-box.special {
