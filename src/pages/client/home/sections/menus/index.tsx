@@ -15,7 +15,7 @@ function HomeMenusSection() {
         fontFamily="Italian1"
         fontSize={34}
         linesWidth={60}
-        firstLineWidth={20}
+        firstLineWidth={10}
         color="#e9c18d"
       />
       <div className="menu-container">

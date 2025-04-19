@@ -77,8 +77,8 @@
 }
 
 #home-page .sidebar .title-icon {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   fill: white;
 }
 
@@ -96,4 +96,14 @@
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 2px;
+}
+
+#home-page .sidebar .filled-star-icon,
+#home-page .sidebar .star-icon {
+  width: 16px;
+  height: 16px;
+}
+
+#home-page .sidebar .star-icon {
+  fill: #b9b9b9;
 }

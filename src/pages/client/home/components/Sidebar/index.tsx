@@ -1,11 +1,12 @@
 import { useState } from "react";
-import Checkbox from "../../../../../components/checkbox";
 import SidebarSearch from "./components/search";
 import "./styles.css";
 import DesignersSignature from "../../../../../components/design-signature";
-import RadioButton from "../../../../../components/radio-button";
 import StackIcon from "../../../../../components/icons/StackIcon";
 import DollarIcon from "../../../../../components/icons/DollarIcon";
+import StarIcon from "../../../../../components/icons/StarIcon";
+import StarButton from "./components/star-button";
+import FilterButton from "./components/filter-button";
 
 function Sidebar() {
   const [menu, setMenu] = useState(true);
@@ -14,6 +15,7 @@ function Sidebar() {
   const [subscriptions, setSubscriptions] = useState(true);
   const [priceRange, setPriceRange] = useState(-1);
   const [category, setCategory] = useState("regular");
+  const [stars, setStars] = useState(-1);
 
   return (
     <div className="sidebar">
@@ -21,108 +23,80 @@ function Sidebar() {
       <div className="quick-actions-bar"></div>
       <div className="sidebar-controls">
         <div className="filter-buttons">
-          <p className="description">
-            Only show sections you are concerned using the following filter form
-          </p>
-          <button className="filter-button" onClick={() => setMenu((v) => !v)}>
-            <Checkbox state={menu} onClick={() => setMenu((v) => !v)} />
-            Menus
-          </button>
-          <button
-            className="filter-button"
+          <p className="description">Only show sections you wish</p>
+          <FilterButton
+            title="Menus"
+            onClick={() => setMenu((v) => !v)}
+            selected={menu}
+          />
+          <FilterButton
+            title="Products"
             onClick={() => setProducts((v) => !v)}
-          >
-            <Checkbox state={products} onClick={() => setProducts((v) => !v)} />
-            Products
-          </button>
-          <button
-            className="filter-button"
+            selected={products}
+          />
+          <FilterButton
+            title="Reservations"
             onClick={() => setReservations((v) => !v)}
-          >
-            <Checkbox
-              state={reservations}
-              onClick={() => setReservations((v) => !v)}
-            />
-            Reservations
-          </button>
-          <button
-            className="filter-button"
+            selected={reservations}
+          />
+          <FilterButton
+            title="Subscriptions"
             onClick={() => setSubscriptions((v) => !v)}
-          >
-            <Checkbox
-              state={subscriptions}
-              onClick={() => setSubscriptions((v) => !v)}
-            />
-            Subscriptions
-          </button>
+            selected={subscriptions}
+          />
         </div>
-        <h3 className="title">Filters</h3>
         <div className="filters">
-          <div className="title-container">
+          <div className="title-container" style={{ marginTop: 10 }}>
             <DollarIcon className="title-icon" />
             <p className="description">Price Range</p>
           </div>
-          <button className="filter-button" onClick={() => setPriceRange(-1)}>
-            <RadioButton
-              state={priceRange == -1}
-              onClick={() => setPriceRange(-1)}
-            />
-            All
-          </button>
-          <button className="filter-button" onClick={() => setPriceRange(200)}>
-            <RadioButton
-              state={priceRange == 200}
-              onClick={() => setPriceRange(200)}
-            />
-            200DH -&gt; 500DH
-          </button>
-          <button className="filter-button" onClick={() => setPriceRange(500)}>
-            <RadioButton
-              state={priceRange == 500}
-              onClick={() => setPriceRange(500)}
-            />
-            500DH -&gt; 1200DH
-          </button>
-          <button className="filter-button" onClick={() => setPriceRange(1200)}>
-            <RadioButton
-              state={priceRange == 1200}
-              onClick={() => setPriceRange(1200)}
-            />
-            &gt; 1200DH
-          </button>
-
-          <div className="title-container">
+          <FilterButton
+            title="All"
+            onClick={() => setPriceRange(-1)}
+            selected={priceRange == -1}
+            isRadio
+          />
+          <FilterButton
+            title="200DH -&gt; 500DH"
+            onClick={() => setPriceRange(200)}
+            selected={priceRange == 200}
+            isRadio
+          />
+          <FilterButton
+            title="500DH -&gt; 1200DH"
+            onClick={() => setPriceRange(500)}
+            selected={priceRange == 500}
+            isRadio
+          />
+          <FilterButton
+            title="&gt; 1200DH"
+            onClick={() => setPriceRange(1200)}
+            selected={priceRange == 1200}
+            isRadio
+          />
+          <div className="title-container" style={{ marginTop: 10 }}>
             <StackIcon className="title-icon" />
             <p className="description">Per Category</p>
           </div>
-          <button
-            className="filter-button"
+
+          <FilterButton
+            title="Regular"
             onClick={() => setCategory("regular")}
-          >
-            <RadioButton
-              state={category == "regular"}
-              onClick={() => setCategory("regular")}
-            />
-            Regular
-          </button>
-          <button
-            className="filter-button"
+            selected={category == "regular"}
+            isRadio
+          />
+          <FilterButton
+            title="Delux"
             onClick={() => setCategory("delux")}
+            selected={category == "delux"}
+            isRadio
+          />
+          <FilterButton
+            title=""
+            onClick={() => setCategory("regular")}
+            selected={category == "regular"}
+            isRadio
           >
-            <RadioButton
-              state={category == "delux"}
-              onClick={() => setCategory("delux")}
-            />
-            Delux
-          </button>
-          <button
-            className="filter-button"
-            onClick={() => setCategory("business")}
-          >
-            <RadioButton
-              state={category == "business"}
-              onClick={() => setCategory("business")}
-            />
             <span
               className="italian-font"
               style={{ fontSize: 20, marginRight: -4 }}
@@ -130,7 +104,19 @@ function Sidebar() {
               B
             </span>
             usiness Class
-          </button>
+          </FilterButton>
+
+          <div className="title-container" style={{ marginTop: 10 }}>
+            <StarIcon className="title-icon" />
+            <p className="description">Reviews</p>
+          </div>
+          {[0].map((v) => (
+            <StarButton
+              count={v}
+              selected={stars == v}
+              onClick={() => setStars(v)}
+            />
+          ))}
         </div>
       </div>
       <DesignersSignature />

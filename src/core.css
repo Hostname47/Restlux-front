@@ -517,6 +517,7 @@ form .input-container.same-line {
 
 .radio {
   width: 13px;
+  min-width: 13px;
   height: 13px;
   border: 1.6px solid #e4e4e4;
   border-radius: 20px;
