@@ -4,7 +4,7 @@ import { GlobalStateType, UserType } from "./types";
 const initialState: GlobalStateType = {
   searchQuery: "",
   user: null,
-  isAdmin: false,
+  isAdmin: true,
 };
 
 export const globalSlice = createSlice({

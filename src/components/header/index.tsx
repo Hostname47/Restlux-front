@@ -18,7 +18,7 @@ import TopMessageBar from "./components/stand-with-palestine";
 import UserImage from "./components/user-image";
 
 function Header() {
-  const { user } = useAppSelector((state) => state.global);
+  const { user, isAdmin } = useAppSelector((state) => state.global);
 
   return (
     <header>
@@ -31,7 +31,7 @@ function Header() {
           <TextLogo id="header-text-logo" />
         </Link>
         <ul>
-          {user && user.isAdmin && (
+          {user && isAdmin == true && (
             <li>
               <Link to="/admin/dashboard">
                 <LinkIcon className="icon" />
@@ -52,7 +52,7 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/home#reservations">
+            <Link to="/home#home-reservations">
               <CalendarIcon className="icon" />
               RESERVATIONS
             </Link>

@@ -1,7 +1,7 @@
 import InstagramIcon from "../../../../../components/icons/InstagramIcon";
-import MenuIcon from "../../../../../components/icons/MenuIcon";
 import LineSquareTitle from "../../../../../components/line-square-title";
 import TextLogo from "../../../../../components/logos/TextLogo";
+import SmartLineSquareTitle from "../../../../../components/smart-line-square-title";
 import CurvedMenuTitle from "./components/curved";
 import HomeMenuBox from "./components/menu";
 import "./styles.css";
@@ -9,10 +9,14 @@ import "./styles.css";
 function HomeMenusSection() {
   return (
     <div id="home-menu-section">
-      <div className="section-title-box">
-        <MenuIcon className="icon" />
-        <h2 className="title">Restaurant Menus</h2>
-      </div>
+      <SmartLineSquareTitle
+        format="lstsl"
+        title="Restaurant Menu"
+        fontFamily="Italian1"
+        fontSize={34}
+        linesWidth={60}
+        style={{ justifySelf: "center" }}
+      />
       <div className="menu-container">
         <div className="menu-preface page">
           <div className="metadata">

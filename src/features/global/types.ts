@@ -8,5 +8,5 @@ export type UserType = {
 export type GlobalStateType = {
   searchQuery: string;
   user: UserType | null;
-  isAdmin: false;
+  isAdmin: boolean;
 };

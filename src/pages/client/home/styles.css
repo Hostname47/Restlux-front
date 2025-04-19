@@ -13,17 +13,28 @@
   width: 340px;
   height: 100%;
   background-color: black;
-  border-radius: 1px solid #000000bf;
+  border-right: 1px solid #292929;
+  position: fixed;
+  left: 0;
+  top: 115px;
+  bottom: 0;
 }
 
 #home-page .content {
   flex: 1;
   padding: 16px;
+  margin-left: 340px;
+  box-sizing: border-box;
 }
 
 #home-page h2 {
   color: #cdad83;
   font-weight: 500;
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 36px;
+  font-family: Italian1;
+}
+
+#home-page .home-section-title-box {
+  justify-self: center;
 }
