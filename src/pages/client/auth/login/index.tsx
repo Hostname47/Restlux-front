@@ -164,7 +164,7 @@ function LoginPage() {
             Login
           </button>
           <p className="not-already-line">
-            Don't have an account ? <Link to="/register">Sign up</Link>
+            Don't have an account ? <Link to="/signup">Sign up</Link>
           </p>
         </form>
       </div>
