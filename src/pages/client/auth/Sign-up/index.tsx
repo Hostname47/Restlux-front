@@ -15,16 +15,8 @@ function Signup(){
     const [password2 ,setpassword2] = useState("");
     const [error,setError]=useState("");
     const [consent,setConsent]=useState(false);
-
-
-
-
-
     const handleSignup = e=>{
         e.preventDefault();
-        
-   
-
     if(Fname.trim()==""){
         setError("Full Name field is required");
         return ; 
@@ -44,7 +36,6 @@ function Signup(){
     if(!/\S+@\S+\.\S+/.test(email.trim())){
         setError("Invalid email format");
         return ; 
-
     }
     if(password1.trim()==""){
         setError("Password field is required");
@@ -53,19 +44,13 @@ function Signup(){
     if(!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z\d]).{8,}$/.test(password1.trim())){
         setError("Password must be at least 8 characters long and include at least one letter, one number, and one symbol.");
         return ; 
-
     }
     if(password1!=password2){
         setError("Passwords do not match. Please make sure both passwords are the same.");
         return ;
     }
-    
     setError("");
-   
 }
-
- 
-
 
     return(
 <ClientLayout >
@@ -101,28 +86,24 @@ function Signup(){
         onChange={(e) => setFname(e.target.value)}
         required
         />
-
         <label htmlFor="">Username <span id="red">*</span></label>
         <input type="text" name="" id=""placeholder="Username"
          value={Username}
          onChange={(e) => setUsername(e.target.value)}
          required
          />
-
         <label htmlFor="">Email Adress <span id="red">*</span></label>
         <input type="text" name="" id="" placeholder="Email Adress"
          value={email}
          onChange={(e) => setemail(e.target.value)}
          required
          />
-
         <label htmlFor="">Password <span id="red">*</span></label>
         <input type="password" name="" id="" placeholder="Password" 
         value={password1}
         onChange={(e) => setpassword1(e.target.value)}
         required
         />
-
         <label htmlFor="">Confirm Password</label>
         <input type="password" name="" id="" placeholder="Confirm Password"
          value={password2}
@@ -130,43 +111,19 @@ function Signup(){
          required
          />
         </div>
-
-
-
-
-
-
         <div className="terms">
             <input type="checkbox" name="" id="check" />
             <label htmlFor="check"><span>By Creating an Account, i accept Hiring Hub terms of
                 Use and Privacy Policy </span></label>
         </div>
-
-
         <input type="submit" name="" id="submit" onClick={handleSignup}/>
-
-
         <div className="haveAccount">
             Have an Account ? <Link to="/login"><span>Sign in here</span></Link>
         </div>
-
     </form>
-
-
-
-
-
-
-
         </div>
         </div>
-
-
-
 </ClientLayout>
-       
-     
     );
 }
-
 export default Signup;
