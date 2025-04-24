@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 #admin-page-content {
     display: flex;
@@ -22,7 +21,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 .left{
     width: 50%;
@@ -32,12 +30,10 @@
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    
 }
 .left h1 {
     margin: auto;
     margin-bottom: 40px;
-    
 }
 .inputs{
     display: flex;
@@ -52,8 +48,6 @@
   border: 1px solid #4b4b4b;
   border-radius: 2px;
   outline: unset;
-  
-
 }
 textarea{
   font-size: 17px;
@@ -64,17 +58,14 @@ textarea{
   border-radius: 2px;
   outline: unset;
   resize: none;
-  
 }
-.inputs span{
+.inputs .red {
     font-size: 20px;
-    color: red;
-}
-
+    color: red!important;
+  }
 img{
     width: 100%;
     border-radius: 20px;
-    
 }
 .right .inputs {
     margin-top: 180px;

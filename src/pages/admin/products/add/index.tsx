@@ -22,25 +22,25 @@ function AdminAddProductPage(){
                 <div className="left">
                 <h1>Add Product</h1>
                 <div className="inputs">
-                <label htmlFor="title">Title <span   id="red">*</span></label>
+                <label htmlFor="title">Title <span   className="red">*</span></label>
                 <input type="text" name="" id="title" placeholder="Title"/>
                 </div>
                 <p></p>
                 <div className="inputs">
-                <label htmlFor="description">Description <span  id="red">*</span></label>
+                <label htmlFor="description">Description <span  className="red">*</span></label>
                 <textarea name="" id="description" placeholder="Description"></textarea>
                 </div>
                 <div className="inputs">
-                <label htmlFor="price">Price <span id="red">*</span ></label>
+                <label htmlFor="price">Price <span className="red">*</span ></label>
                 <input type="number" name="" id="price" placeholder="Price"/>
                 </div>
                 <div className="inputs">
-                <label htmlFor="tag">Tags <span id="red">*</span></label>
+                <label htmlFor="tag">Tags <span className="red">*</span></label>
                 <input type="text" name="" id="tag" placeholder="Tags" />
                 </div>
 
                 <div className="inputs">
-                <label htmlFor="category">category <span id="red">*</span></label>
+                <label htmlFor="category">category <span className="red">*</span></label>
                 <select name="" id="category">
                     <option value="regular">Regular</option>
                     <option value="delux">Delux</option>
@@ -52,7 +52,7 @@ function AdminAddProductPage(){
                 <input type="number" name="" id="discount" step={0.1} placeholder="Discount"/>
                 </div>
                 <div className="inputs">
-                <label htmlFor="quantity">Quantity <span id="red">*</span></label>
+                <label htmlFor="quantity">Quantity <span className="red">*</span></label>
                 <input type="number" name="" id="quantity" placeholder="Quantity" />
                 </div>
                 </div>
@@ -60,7 +60,7 @@ function AdminAddProductPage(){
 
                 <div className="right">
                 <div className="inputs">
-                <label htmlFor="image">image <span id="red">*</span></label>
+                <label htmlFor="image">image <span className="red">*</span></label>
                 
                  <input
                  type="file"

@@ -54,9 +54,8 @@ function Signup(){
 
     return(
 <ClientLayout >
-<div className="auth-body">
-<div className="container">
-    
+    <div className="auth-body">
+    <div className="container">
     <h1>Signup</h1>
     <button className="button">
         <GoogleIcon className="icon"/>
@@ -68,7 +67,6 @@ function Signup(){
         <div className="line"></div>
     </div>
     <form action="" >
-
     <FormMessage
             content={error}
             showCloseButton
@@ -76,29 +74,26 @@ function Signup(){
             color="red"
             styles={{ marginBottom: 16 }}
           />
-
-
         <div className="inputs-container">
-
-        <label htmlFor="">Full Name <span id="red">*</span></label>
+        <label htmlFor="">Full Name <span className="red">*</span></label>
         <input type="text" name="" id="" placeholder="Full Name" 
         value={Fname}
         onChange={(e) => setFname(e.target.value)}
         required
         />
-        <label htmlFor="">Username <span id="red">*</span></label>
+        <label htmlFor="">Username <span className="red">*</span></label>
         <input type="text" name="" id=""placeholder="Username"
          value={Username}
          onChange={(e) => setUsername(e.target.value)}
          required
          />
-        <label htmlFor="">Email Adress <span id="red">*</span></label>
+        <label htmlFor="">Email Adress <span className="red">*</span></label>
         <input type="text" name="" id="" placeholder="Email Adress"
          value={email}
          onChange={(e) => setemail(e.target.value)}
          required
          />
-        <label htmlFor="">Password <span id="red">*</span></label>
+        <label htmlFor="">Password <span className="red">*</span></label>
         <input type="password" name="" id="" placeholder="Password" 
         value={password1}
         onChange={(e) => setpassword1(e.target.value)}
