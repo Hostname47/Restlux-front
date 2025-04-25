@@ -24,7 +24,6 @@ function AdminAddProductPage() {
     <AdminLayout>
       <div className="card">
         <div className="left">
-          <h1>Add Product</h1>
           <div className="inputs">
             <label htmlFor="title">
               Title <span className="red">*</span>
@@ -131,7 +130,7 @@ function AdminAddProductPage() {
             </label>
 
             <input type="file" accept="image/*" onChange={handleImage} />
-            <img src={image} alt="this is a picture" />
+            <img src={Image} alt="this is a picture" />
           </div>
           <input type="submit" name="" value="Add" id="Add" />
         </div>
