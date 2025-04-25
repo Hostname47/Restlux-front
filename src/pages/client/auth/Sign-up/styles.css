@@ -45,7 +45,6 @@
    align-items: center;
    gap: 16px;
    margin-bottom: 20px;
-
 }
 .container .line{
   height: 1px;
@@ -69,7 +68,6 @@
   border-radius: 2px;
   outline: unset;
 }
-
 .terms{
     display: flex;
     justify-content: center;

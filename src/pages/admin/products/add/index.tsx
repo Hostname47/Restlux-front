@@ -10,13 +10,55 @@ function AdminAddProductPage() {
   const [tag, settag] = useState("");
   const [category, setcategory] = useState("");
   const [discount, setdiscount] = useState(0);
-  const [quantity, setquantity] = useState();
+  const [quantity, setquantity] = useState("");
   const [Image, setImage] = useState(image);
+  const [error, setError] = useState("");
   const handleImage = (e) => {
     const file = e.target.files[0];
     if (file) {
       const myimage = URL.createObjectURL(file);
       setImage(myimage);
+    }
+  };
+
+  const handleFrom = (e) => {
+    e.preventDefault();
+    if (title.trim() == "") {
+      setError("Title field is required");
+      return;
+    }
+    if (!/^[A-Za-z ]{3,50}$/.test(title.trim())) {
+      setError(
+        "Product title must be 3-50 letters long and contain only letters and spaces."
+      );
+    }
+    if (description.trim() == "") {
+      setError("Description field is required");
+      return;
+    }
+    if (price == "") {
+      setError("Price field is required");
+      return;
+    }
+    if (!/^\d+(\.\d{1,2})?$/.test(price)) {
+      setError("Product price must be a number with up to two decimal places");
+      return;
+    }
+    if (tag.trim() == "") {
+      setError("Tag field is required");
+      return;
+    }
+    if (/^[a-zA-Z0-9_-]+$/.test(tag.trim())) {
+      setError(
+        "Product tag must use only letters, numbers, underscores (_), or hyphens (-)."
+      );
+      return;
+    }
+    if (!/^\d+(\.\d{1,2})?$/.test(discount)) {
+      setError(
+        "Product discount must be a number with up to two decimal places"
+      );
+      return;
     }
   };
 
@@ -85,7 +127,7 @@ function AdminAddProductPage() {
               name=""
               id="category"
               defaultValue={category}
-              onChange={(e) => e.target.value}
+              onChange={(e) => setImage(e.target.value)}
             >
               <option value="regular">Regular</option>
               <option value="delux">Delux</option>
@@ -102,7 +144,9 @@ function AdminAddProductPage() {
               placeholder="Discount"
               value={discount}
               onChange={(e) => {
-                setdiscount(e.target.value);
+                setdiscount(
+                  e.target.value === "" ? 0 : parseFloat(e.target.value)
+                );
               }}
             />
           </div>
