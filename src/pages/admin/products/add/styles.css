@@ -69,7 +69,7 @@ img{
     height :300px ;
 }
 .right .inputs {
-    margin-top: 120px;
+    
     margin-left: 50px;
 }
 #Add{
@@ -93,4 +93,7 @@ img{
     background: linear-gradient(to right, #cd995c, #eab308); /* orange to yellowish */
     color: black;
     transition: 0.3s;
+}
+.hide{
+    display: none;
 }
