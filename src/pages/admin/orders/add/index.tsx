@@ -1,8 +1,10 @@
 import AdminLayout from "../../../../layout/admin";
 import "./styles.css";
 
-function AdminAddProductPage() {
-  return <AdminLayout>AdminAddProductPage</AdminLayout>;
+function AdminAddOrderPage() {
+  return <AdminLayout>
+
+  </AdminLayout>;
 }
 
-export default AdminAddProductPage;
+export default AdminAddOrderPage;

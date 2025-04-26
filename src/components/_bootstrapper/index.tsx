@@ -4,7 +4,6 @@ import LoginPage from "../../pages/client/auth/login";
 import HomePage from "../../pages/client/home";
 import AdminDashboard from "../../pages/admin/dashboard";
 import AdminStatisticsPage from "../../pages/admin/statistics";
-import AdminAddProductPage from "../../pages/admin/orders/add";
 import AdminProductsIndexPage from "../../pages/admin/orders/index";
 import AdminSecurityAccessPage from "../../pages/admin/roles-and-permissions";
 import { useEffect, useState } from "react";
@@ -14,6 +13,9 @@ import axios from "axios";
 import { useAppDispatch } from "../../app/hooks";
 import { loginUser } from "../../features/global/globalSlice";
 import Cookies from "js-cookie";
+import Signup from "../../pages/client/auth/Sign-up";
+import AdminAddProductPage from "../../pages/admin/products/add";
+import AdminAddOrderPage from "../../pages/admin/orders/add";
 
 function Bootstrapper() {
   const [bootstrapped, setBootstrapped] = useState(false);
@@ -73,10 +75,14 @@ function Bootstrapper() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={<HomePage />} />
+
+        
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/statistics" element={<AdminStatisticsPage />} />
-        <Route path="/admin/orders/add" element={<AdminAddProductPage />} />
+        <Route path="/admin/products/add" element={<AdminAddProductPage/>} />
+        <Route path="/admin/orders/add" element={<AdminAddOrderPage/>} />
         <Route path="/admin/orders" element={<AdminProductsIndexPage />} />
         <Route path="/admin/management" element={<AdminSecurityAccessPage />} />
       </Routes>
