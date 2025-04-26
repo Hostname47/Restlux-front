@@ -24,7 +24,7 @@ function Header() {
     <header>
       <TopMessageBar
         shown
-        message="🕊️ Stand with Palestine — Stop the Genocide"
+        message="🕊️ G37 Stand with Palestine — Stop the Genocide"
       />
       <div id="header">
         <Link to="/" className="flex">
