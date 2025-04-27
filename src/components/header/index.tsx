@@ -98,7 +98,7 @@ function Header() {
                   <LoginIcon className="icon" />
                   SIGN IN
                 </Link>
-                <Link to="/sign-up" className="button-style-1 whitebg">
+                <Link to="/signup" className="button-style-1 whitebg">
                   <UserIcon className="icon" />
                   SIGN UP
                 </Link>
