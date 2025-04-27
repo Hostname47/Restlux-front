@@ -1,4 +1,4 @@
-import { HTMLElementType } from "react";
+import { CSSProperties, HTMLElementType } from "react";
 
 type SmartLineSquareTitleType = {
   format?: string;
@@ -11,6 +11,7 @@ type SmartLineSquareTitleType = {
   linesWidth?: number;
   firstLineWidth?: number;
   squaresFilled?: boolean;
+  style?: CSSProperties | undefined;
 };
 
 function SmartLineSquareTitle({
@@ -24,12 +25,13 @@ function SmartLineSquareTitle({
   linesWidth = 80,
   firstLineWidth = 0,
   squaresFilled = false,
+  style,
   ...props
 }: SmartLineSquareTitleType) {
   const components = format.split("");
   console.log(components);
   return (
-    <div className="line-square-title" {...props}>
+    <div className="line-square-title" style={style} {...props}>
       {components.map((component, index) => {
         switch (component) {
           case "l":
