@@ -12,8 +12,8 @@ import { loginUser } from "../../../../features/global/globalSlice";
 import Cookies from "js-cookie";
 
 function LoginPage() {
-  const [login, setLogin] = useState("mouad@gmail.com");
-  const [password, setPassword] = useState("mouad123");
+  const [login, setLogin] = useState("director@restlux.com");
+  const [password, setPassword] = useState("root");
   const [remember, setRemember] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
