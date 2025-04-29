@@ -14,6 +14,7 @@ import axios from "axios";
 import { useAppDispatch } from "../../app/hooks";
 import { loginUser } from "../../features/global/globalSlice";
 import Cookies from "js-cookie";
+import Signup from "../../pages/client/auth/Sign-up";
 
 function Bootstrapper() {
   const [bootstrapped, setBootstrapped] = useState(false);
@@ -73,6 +74,7 @@ function Bootstrapper() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/statistics" element={<AdminStatisticsPage />} />
