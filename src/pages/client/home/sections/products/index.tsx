@@ -1,4 +1,6 @@
 import SmartLineSquareTitle from "../../../../../components/smart-line-square-title";
+import Product from "./components/product";
+import "./styles.css";
 
 function HomeProductsSection() {
   return (
@@ -12,6 +14,57 @@ function HomeProductsSection() {
         color="#e9c18d"
         style={{ justifyContent: "center" }}
       />
+      <div className="products-box">
+        <button className="nav-button">&lt;</button>
+        <div className="products-container">
+          <Product
+            id={1}
+            name="Garlic Bliss Breadsticks"
+            category="Food"
+            price={199.99}
+            is_available
+            slug="plate-diverse"
+            image=""
+          />
+          <Product
+            id={1}
+            name="Garlic Bliss Breadsticks"
+            category="Food"
+            price={199.99}
+            is_available
+            slug="plate-diverse"
+            image=""
+          />
+          <Product
+            id={1}
+            name="Garlic Bliss Breadsticks"
+            category="Food"
+            price={199.99}
+            is_available
+            slug="plate-diverse"
+            image=""
+          />
+          <Product
+            id={1}
+            name="Garlic Bliss Breadsticks"
+            category="Food"
+            price={199.99}
+            is_available
+            slug="plate-diverse"
+            image=""
+          />
+          <Product
+            id={1}
+            name="Garlic Bliss Breadsticks"
+            category="Food"
+            price={199.99}
+            is_available
+            slug="plate-diverse"
+            image=""
+          />
+        </div>
+        <button className="nav-button">&gt;</button>
+      </div>
     </div>
   );
 }
