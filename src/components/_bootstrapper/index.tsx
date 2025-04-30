@@ -14,7 +14,7 @@ import axios from "axios";
 import { useAppDispatch } from "../../app/hooks";
 import { loginUser } from "../../features/global/globalSlice";
 import Cookies from "js-cookie";
-import Signup from "../../pages/client/auth/Sign-up";
+import SignupPage from "../../pages/client/auth/sign-up";
 
 function Bootstrapper() {
   const [bootstrapped, setBootstrapped] = useState(false);
@@ -27,17 +27,20 @@ function Bootstrapper() {
     if (token) {
       // Set the token globally in Axios
       axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-    }
-
-    axios
-      .get("/api/user")
-      .then((res) => {
-        dispatch(loginUser(res.data));
-      })
-      .catch(() => {})
-      .finally(() => {
+      axios
+        .get("/api/user")
+        .then((res) => {
+          dispatch(loginUser(res.data));
+        })
+        .catch(() => {})
+        .finally(() => {
+          setBootstrapped(true);
+        });
+    } else {
+      setTimeout(() => {
         setBootstrapped(true);
-      });
+      }, 1200);
+    }
   };
 
   const animate = () => {
@@ -74,7 +77,7 @@ function Bootstrapper() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/sign-up" element={<SignupPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/statistics" element={<AdminStatisticsPage />} />

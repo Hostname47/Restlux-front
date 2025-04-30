@@ -12,10 +12,10 @@ function LogoutButton() {
 
   const logout = () => {
     setLoading(true);
-
     axios
       .post("/api/logout")
       .then(() => {
+        delete axios.defaults.headers.common["Authorization"];
         Cookies.remove("auth_token");
         dispatch(logoutUser());
       })

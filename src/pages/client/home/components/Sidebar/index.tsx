@@ -9,7 +9,6 @@ import StarButton from "./components/star-button";
 import FilterButton from "./components/filter-button";
 
 function Sidebar() {
-  const [menu, setMenu] = useState(true);
   const [products, setProducts] = useState(true);
   const [reservations, setReservations] = useState(true);
   const [subscriptions, setSubscriptions] = useState(true);
@@ -24,11 +23,6 @@ function Sidebar() {
       <div className="sidebar-controls">
         <div className="filter-buttons">
           <p className="description">Only show sections you wish</p>
-          <FilterButton
-            title="Menus"
-            onClick={() => setMenu((v) => !v)}
-            selected={menu}
-          />
           <FilterButton
             title="Products"
             onClick={() => setProducts((v) => !v)}

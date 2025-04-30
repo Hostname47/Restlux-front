@@ -273,6 +273,7 @@ button {
 .button-style-3 {
   display: flex;
   align-items: center;
+  gap: 6px;
   padding: 14px 19px;
   width: max-content;
   font-weight: 600;
@@ -280,10 +281,17 @@ button {
   font-size: 15px;
   transition: all 0.3s ease;
   color: #c2c2c2;
+  fill: #c2c2c2;
 }
 
 .button-style-3:hover {
   color: white;
+  fill: white;
+}
+
+.button-style-3 .icon {
+  width: 20px;
+  height: 20px;
 }
 
 .button-style-4 {

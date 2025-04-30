@@ -13,6 +13,7 @@
   gap: 24px;
   max-width: 360px;
   width: 360px;
+  padding: 18px 0;
   align-self: center;
 }
 
@@ -25,7 +26,7 @@
 .auth-page h1 {
   letter-spacing: 1px;
   font-weight: 600;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
 }
 
 .auth-page .sign-with {

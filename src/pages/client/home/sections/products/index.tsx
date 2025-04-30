@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+import ProductIcon from "../../../../../components/icons/ProductIcon";
 import SmartLineSquareTitle from "../../../../../components/smart-line-square-title";
 import Product from "./components/product";
 import "./styles.css";
@@ -53,18 +55,13 @@ function HomeProductsSection() {
             slug="plate-diverse"
             image=""
           />
-          <Product
-            id={1}
-            name="Garlic Bliss Breadsticks"
-            category="Food"
-            price={199.99}
-            is_available
-            slug="plate-diverse"
-            image=""
-          />
         </div>
         <button className="nav-button">&gt;</button>
       </div>
+      <Link to="" className="button-style-3">
+        <ProductIcon className="icon" />
+        See all products
+      </Link>
     </div>
   );
 }
