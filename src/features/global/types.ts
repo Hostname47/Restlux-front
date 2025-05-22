@@ -3,6 +3,7 @@ export type UserType = {
   email: string;
   username: string;
   isAdmin: boolean;
+  roles: string;
 };
 
 export type GlobalStateType = {

@@ -15,6 +15,8 @@ import { useAppDispatch } from "../../app/hooks";
 import { loginUser } from "../../features/global/globalSlice";
 import Cookies from "js-cookie";
 import SignupPage from "../../pages/client/auth/sign-up";
+import AboutPage from "../../pages/client/about";
+import ContactPage from "../../pages/client/contact";
 
 function Bootstrapper() {
   const [bootstrapped, setBootstrapped] = useState(false);
@@ -79,6 +81,8 @@ function Bootstrapper() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignupPage />} />
         <Route path="/home" element={<HomePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/statistics" element={<AdminStatisticsPage />} />
         <Route path="/admin/orders/add" element={<AdminAddProductPage />} />

@@ -19,42 +19,18 @@ function HomeProductsSection() {
       <div className="products-box">
         <button className="nav-button">&lt;</button>
         <div className="products-container">
-          <Product
-            id={1}
-            name="Garlic Bliss Breadsticks"
-            category="Food"
-            price={199.99}
-            is_available
-            slug="plate-diverse"
-            image=""
-          />
-          <Product
-            id={1}
-            name="Garlic Bliss Breadsticks"
-            category="Food"
-            price={199.99}
-            is_available
-            slug="plate-diverse"
-            image=""
-          />
-          <Product
-            id={1}
-            name="Garlic Bliss Breadsticks"
-            category="Food"
-            price={199.99}
-            is_available
-            slug="plate-diverse"
-            image=""
-          />
-          <Product
-            id={1}
-            name="Garlic Bliss Breadsticks"
-            category="Food"
-            price={199.99}
-            is_available
-            slug="plate-diverse"
-            image=""
-          />
+          {[1, 1, 1, 1].map((product, index) => (
+            <Product
+              key={index}
+              id={1}
+              name="Garlic Bliss Breadsticks"
+              category="Food"
+              price={199.99}
+              is_available
+              slug="plate-diverse"
+              image=""
+            />
+          ))}
         </div>
         <button className="nav-button">&gt;</button>
       </div>

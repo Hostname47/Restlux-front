@@ -29,7 +29,6 @@ function SmartLineSquareTitle({
   ...props
 }: SmartLineSquareTitleType) {
   const components = format.split("");
-  console.log(components);
   return (
     <div className="line-square-title" style={style} {...props}>
       {components.map((component, index) => {
@@ -38,6 +37,7 @@ function SmartLineSquareTitle({
             return (
               <div
                 className="line"
+                key={index}
                 style={{
                   width:
                     index == 0
@@ -58,6 +58,7 @@ function SmartLineSquareTitle({
           case "s":
             return (
               <div
+                key={index}
                 className="square"
                 style={{
                   borderColor: itemsColor ?? "currentcolor",
@@ -68,6 +69,7 @@ function SmartLineSquareTitle({
           default:
             return (
               <Type
+                key={index}
                 className="title"
                 style={{
                   fontFamily: fontFamily ?? "initial",

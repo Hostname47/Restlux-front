@@ -35,8 +35,8 @@ function Product({
         <div className="price-and-stars">
           <p className="price">{price}$</p>
           <div className="stars">
-            {Array.from({ length: 5 }).map(() => (
-              <Star className="star filled" />
+            {Array.from({ length: 5 }).map((s, index) => (
+              <Star className="star filled" key={index} />
             ))}
           </div>
         </div>

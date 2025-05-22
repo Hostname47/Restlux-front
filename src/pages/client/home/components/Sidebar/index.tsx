@@ -104,8 +104,9 @@ function Sidebar() {
             <StarIcon className="title-icon" />
             <p className="description">Reviews</p>
           </div>
-          {[0].map((v) => (
+          {[0].map((v, i) => (
             <StarButton
+              key={i}
               count={v}
               selected={stars == v}
               onClick={() => setStars(v)}

@@ -25,7 +25,7 @@ function Footer() {
           <Link to="" className="link">
             Order a meal
           </Link>
-          <Link to="" className="link">
+          <Link to="/about" className="link">
             About
           </Link>
           <Link to="" className="link">
