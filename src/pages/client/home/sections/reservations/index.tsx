@@ -6,12 +6,23 @@ function HomeReservationSection() {
       <SmartLineSquareTitle
         format="lstsl"
         title="Reservations"
-        color="#e9c18d"
         fontFamily="Italian1"
         fontSize={34}
         linesWidth={60}
-        firstLineWidth={10}
+        color="#e9c18d"
+        style={{ justifyContent: "center" }}
       />
+      <p style={{ textAlign: "center", margin: "26px 0" }}>Reservations here</p>
+      <SmartLineSquareTitle
+        format="lstsl"
+        title="Subscriptions"
+        fontFamily="Italian1"
+        fontSize={34}
+        linesWidth={60}
+        color="#e9c18d"
+        style={{ justifyContent: "center", margin: "26px 0" }}
+      />
+      <p style={{ textAlign: "center" }}>Subscriptions here</p>
     </div>
   );
 }

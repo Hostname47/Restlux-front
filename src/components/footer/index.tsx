@@ -42,11 +42,11 @@ function Footer() {
           <Link to="" className="link">
             Gallery
           </Link>
-          <Link to="" className="link">
-            Dinner Menu
+          <Link to="/privacy-policy" className="link">
+            Privacy Policy
           </Link>
           <Link to="" className="link">
-            Get Directions
+            Terms of use
           </Link>
         </div>
         <div className="links-section">

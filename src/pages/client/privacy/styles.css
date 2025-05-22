@@ -1,0 +1,56 @@
+#p-policy {
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+#p-policy .header {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #444;
+  margin-bottom: 2rem;
+}
+
+#p-policy .header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#p-policy .container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#p-policy .section {
+  margin-bottom: 2rem;
+}
+
+#p-policy .section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+#p-policy .section p {
+  margin-bottom: 0.8rem;
+}
+
+#p-policy ul {
+  padding-left: 1.2rem;
+}
+
+#p-policy ul li {
+  margin-bottom: 0.5rem;
+}
+
+#p-policy .back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #666;
+}
+
+#p-policy .back-button:hover {
+  border-color: #999;
+}

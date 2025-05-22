@@ -1,3 +1,4 @@
+import Footer from "../../../components/footer";
 import ClientLayout from "../../../layout/client";
 import Sidebar from "./components/Sidebar";
 import HomeMenusSection from "./sections/menus";
@@ -16,9 +17,9 @@ function HomePage() {
           <HomeProductsSection />
           <div style={{ height: 26 }} />
           <HomeReservationSection />
-          <div style={{ height: 200 }} />
         </div>
       </div>
+      <Footer />
     </ClientLayout>
   );
 }

@@ -17,6 +17,7 @@ import Cookies from "js-cookie";
 import SignupPage from "../../pages/client/auth/sign-up";
 import AboutPage from "../../pages/client/about";
 import ContactPage from "../../pages/client/contact";
+import PrivacyPolicyPage from "../../pages/client/privacy";
 
 function Bootstrapper() {
   const [bootstrapped, setBootstrapped] = useState(false);
@@ -83,6 +84,7 @@ function Bootstrapper() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/statistics" element={<AdminStatisticsPage />} />
         <Route path="/admin/orders/add" element={<AdminAddProductPage />} />
