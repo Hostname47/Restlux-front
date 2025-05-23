@@ -29,7 +29,7 @@ function Product({
         <Link to={"/categories/" + category} className="category">
           {category}
         </Link>
-        <Link to="" className="name">
+        <Link to="/products/view" className="name">
           {name}
         </Link>
         <div className="price-and-stars">

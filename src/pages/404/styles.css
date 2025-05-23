@@ -1,0 +1,14 @@
+#not-found,
+#not-found-content {
+  height: 100%;
+}
+
+#not-found-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#not-found-content h1 {
+  margin: auto;
+}

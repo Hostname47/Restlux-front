@@ -1,0 +1,126 @@
+#view-product .container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  display: flex;
+  overflow: hidden;
+}
+
+#view-product .product-image {
+  flex: 1 1 45%;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+}
+
+#view-product .product-image img {
+  max-width: 90%;
+  max-height: 350px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+#view-product .product-details {
+  flex: 1 1 55%;
+  padding: 48px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#view-product .product-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+#view-product .product-price {
+  font-size: 1.5rem;
+  color: #d9bd4b;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+#view-product .product-desc {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+#view-product .add-btn {
+  background: linear-gradient(90deg, #e0b973 0%, #bfa14a 100%);
+  color: #181818;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 38px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 12px rgba(224, 185, 115, 0.15);
+}
+
+#view-product .add-btn:hover {
+  background: linear-gradient(90deg, #463b14 0%, #e0b973 100%);
+  color: #222;
+}
+
+#view-product .product-labels {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+#view-product .label {
+  background: #232323;
+  color: #e0b973;
+  border-radius: 16px;
+  padding: 6px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#view-product .details-section {
+  max-width: 1100px;
+  margin: 32px auto 0 auto;
+  background: rgba(24, 24, 24, 0.95);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  padding: 32px 40px;
+  color: #e0e0e0;
+  margin-bottom: 40px;
+}
+
+#view-product .details-section h3 {
+  font-size: 1.3rem;
+  color: #e0b973;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#view-product .details-section ul {
+  margin: 0 0 18px 0;
+  padding-left: 20px;
+}
+
+@media (max-width: 900px) {
+  #view-product .container {
+    flex-direction: column;
+  }
+
+  #view-product .product-image,
+  #view-product .product-details {
+    min-height: unset;
+    padding: 32px 20px;
+  }
+}

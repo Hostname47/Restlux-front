@@ -18,6 +18,8 @@ import SignupPage from "../../pages/client/auth/sign-up";
 import AboutPage from "../../pages/client/about";
 import ContactPage from "../../pages/client/contact";
 import PrivacyPolicyPage from "../../pages/client/privacy";
+import ProductViewPage from "../../pages/client/view-product";
+import NotFoundPage from "../../pages/404";
 
 function Bootstrapper() {
   const [bootstrapped, setBootstrapped] = useState(false);
@@ -82,8 +84,10 @@ function Bootstrapper() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignupPage />} />
         <Route path="/home" element={<HomePage />} />
+        <Route path="/products/view" element={<ProductViewPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/not-found" element={<NotFoundPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/statistics" element={<AdminStatisticsPage />} />
